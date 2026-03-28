@@ -241,7 +241,7 @@
               btn.disabled=true;btn.innerHTML='<i class="fa-solid fa-spinner fa-spin"></i> Sending…';
               msg.style.display='none';
               var name=document.getElementById('qname').value.trim().split(' ');
-              fetch('/api/inquiry',{
+              fetch('/api/inquiry.php',{
                 method:'POST',
                 headers:{'Content-Type':'application/json'},
                 body:JSON.stringify({

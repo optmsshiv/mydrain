@@ -133,7 +133,7 @@
             e.preventDefault();if(!form.checkValidity()){form.reportValidity();return;}
             btn.disabled=true;btn.innerHTML='<i class="fa-solid fa-spinner fa-spin"></i> Sending…';msg.style.display='none';
             var email=document.getElementById('cemail').value;
-            fetch('/api/inquiry',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({
+            fetch('/api/inquiry.php',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({
               source:'contact_quote',
               first_name:document.getElementById('fname').value,last_name:document.getElementById('lname').value,
               phone:document.getElementById('cphone').value,email:email,
@@ -190,7 +190,7 @@
               if(!phone&&!email){alert('Please enter a phone number or email.');return;}
               btn.disabled=true;btn.innerHTML='<i class="fa-solid fa-spinner fa-spin"></i> Sending…';msg.style.display='none';
               var nameParts=name.split(' ');
-              fetch('/api/inquiry',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({
+              fetch('/api/inquiry.php',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({
                 source:'contact_quick',
                 first_name:nameParts[0],last_name:nameParts.slice(1).join(' '),
                 email:email,phone:phone,message:message
