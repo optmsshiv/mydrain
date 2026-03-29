@@ -363,10 +363,6 @@
 <a href="tel:+15164029213" class="floating-btn floating-btn--call" aria-label="Call us"><i class="fa-solid fa-phone"></i></a>
 
 <script>
-(function(){var n=document.getElementById('navbar');window.addEventListener('scroll',function(){n.classList.toggle('scrolled',window.scrollY>60);});})();
-(function(){var h=document.getElementById('hamburger'),m=document.getElementById('mobileMenu');h.addEventListener('click',function(){var o=m.classList.toggle('open');h.setAttribute('aria-expanded',o);});})();
-(function(){var els=document.querySelectorAll('.reveal');if(!els.length)return;var obs=new IntersectionObserver(function(entries){entries.forEach(function(e){if(e.isIntersecting){e.target.classList.add('visible');obs.unobserve(e.target);}});},{threshold:.15});els.forEach(function(el){obs.observe(el);});})();
-(function(){var b=document.getElementById('backTop');window.addEventListener('scroll',function(){b.classList.toggle('show',window.scrollY>400);});b.addEventListener('click',function(){window.scrollTo({top:0,behavior:'smooth'});});})();
 // Category filter interaction
 (function(){var btns=document.querySelectorAll('.cat-btn');btns.forEach(function(b){b.addEventListener('click',function(){btns.forEach(function(x){x.classList.remove('active');});b.classList.add('active');});});})();
 </script>

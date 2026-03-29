@@ -78,31 +78,6 @@
       });
     });
 
-    // Forms
-    function handleForm(id,successMsg){
-      var form=document.getElementById(id);
-      if(!form)return;
-      var btn=form.querySelector('[type="submit"]');
-      form.addEventListener('submit',function(e){
-        e.preventDefault();
-        if(!form.checkValidity()){form.reportValidity();return;}
-        btn.disabled=true;
-        btn.innerHTML='<i class="fa-solid fa-spinner fa-spin"></i> Sending…';
-        setTimeout(function(){
-          btn.innerHTML='<i class="fa-solid fa-circle-check"></i> '+successMsg;
-          btn.style.background='var(--green)';btn.style.borderColor='var(--green)';
-          form.reset();
-          setTimeout(function(){
-            btn.innerHTML=btn.dataset.original||'Submit';
-            btn.disabled=false;btn.style.background='';btn.style.borderColor='';
-          },4000);
-        },1400);
-      });
-      if(btn)btn.dataset.original=btn.innerHTML;
-    }
-    handleForm('quoteForm','Request Received! We\'ll call you shortly.');
-    handleForm('contactForm','Message Sent! We\'ll respond soon.');
-
     // Back to top
     var btt=document.getElementById('backTop');
     if(btt){

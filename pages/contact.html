@@ -12,6 +12,14 @@
 <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@600;700;800;900&family=Outfit:wght@300;400;500;600;700&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet"/>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous"/>
 <link rel="stylesheet" href="../css/style.css"/>
+<style>
+  @media(max-width:768px){
+    .contact-two-col{
+      grid-template-columns:1fr !important;
+      gap:36px !important;
+    }
+  }
+</style>
 </head>
 <body>
 
@@ -99,7 +107,7 @@
 <!-- FORM + FAQ -->
 <section id="quote-form" class="section" style="scroll-margin-top:var(--nav-h);">
   <div class="container">
-    <div style="display:grid;grid-template-columns:1.1fr 1fr;gap:56px;align-items:start;">
+    <div style="display:grid;grid-template-columns:1.1fr 1fr;gap:56px;align-items:start;" class="contact-two-col">
 
       <!-- Quote Form -->
       <div class="reveal">
@@ -218,13 +226,13 @@
           <h4 style="margin-bottom:16px;display:flex;align-items:center;gap:8px;"><i class="fa-solid fa-clock" style="color:var(--sky);"></i>Business Hours</h4>
           <table style="width:100%;border-collapse:collapse;font-size:.88rem;">
             <tbody>
-              <tr style="border-bottom:1px solid var(--gray2);"><td style="padding:8px 0;color:var(--navy);font-weight:600;">Monday</td><td style="padding:8px 0;color:var(--text2);text-align:right;">7:00 AM – 8:00 PM</td></tr>
-              <tr style="border-bottom:1px solid var(--gray2);"><td style="padding:8px 0;color:var(--navy);font-weight:600;">Tuesday</td><td style="padding:8px 0;color:var(--text2);text-align:right;">7:00 AM – 8:00 PM</td></tr>
-              <tr style="border-bottom:1px solid var(--gray2);"><td style="padding:8px 0;color:var(--navy);font-weight:600;">Wednesday</td><td style="padding:8px 0;color:var(--text2);text-align:right;">7:00 AM – 8:00 PM</td></tr>
-              <tr style="border-bottom:1px solid var(--gray2);"><td style="padding:8px 0;color:var(--navy);font-weight:600;">Thursday</td><td style="padding:8px 0;color:var(--text2);text-align:right;">7:00 AM – 8:00 PM</td></tr>
-              <tr style="border-bottom:1px solid var(--gray2);"><td style="padding:8px 0;color:var(--navy);font-weight:600;">Friday</td><td style="padding:8px 0;color:var(--text2);text-align:right;">7:00 AM – 8:00 PM</td></tr>
-              <tr style="border-bottom:1px solid var(--gray2);"><td style="padding:8px 0;color:var(--navy);font-weight:600;">Saturday</td><td style="padding:8px 0;color:var(--text2);text-align:right;">8:00 AM – 5:00 PM</td></tr>
-              <tr><td style="padding:8px 0;color:var(--navy);font-weight:600;">Emergency Line</td><td style="padding:8px 0;text-align:right;"><span style="color:var(--amber);font-weight:700;">24 / 7 / 365</span></td></tr>
+              <tr style="border-bottom:1px solid var(--gray2);"><td style="padding:8px 0;color:var(--navy);font-weight:600;">Monday</td><td style="padding:8px 0;color:var(--text2);text-align:right;">24 Hrs</td></tr>
+              <tr style="border-bottom:1px solid var(--gray2);"><td style="padding:8px 0;color:var(--navy);font-weight:600;">Tuesday</td><td style="padding:8px 0;color:var(--text2);text-align:right;">24 Hrs</td></tr>
+              <tr style="border-bottom:1px solid var(--gray2);"><td style="padding:8px 0;color:var(--navy);font-weight:600;">Wednesday</td><td style="padding:8px 0;color:var(--text2);text-align:right;">24 Hrs</td></tr>
+              <tr style="border-bottom:1px solid var(--gray2);"><td style="padding:8px 0;color:var(--navy);font-weight:600;">Thursday</td><td style="padding:8px 0;color:var(--text2);text-align:right;">24 Hrs</td></tr>
+              <tr style="border-bottom:1px solid var(--gray2);"><td style="padding:8px 0;color:var(--navy);font-weight:600;">Friday</td><td style="padding:8px 0;color:var(--text2);text-align:right;">24 Hrs</td></tr>
+              <tr style="border-bottom:1px solid var(--gray2);"><td style="padding:8px 0;color:var(--navy);font-weight:600;">Saturday</td><td style="padding:8px 0;color:var(--text2);text-align:right;">24 Hrs</td></tr>
+              <tr><td style="padding:8px 0;color:var(--navy);font-weight:600;">Emergency Line</td><td style="padding:8px 0;text-align:right;"><span style="color:var(--amber);font-weight:700;">24 / 7 </span></td></tr>
             </tbody>
           </table>
           <p style="font-size:.78rem;color:var(--gray3);margin-top:12px;"><i class="fa-solid fa-info-circle"></i> No extra charges for evening, weekend, or holiday calls.</p>
@@ -337,15 +345,6 @@
 
 <button id="backTop" aria-label="Back to top"><i class="fa-solid fa-chevron-up"></i></button>
 <a href="tel:+15164029213" class="floating-btn floating-btn--call" aria-label="Call us"><i class="fa-solid fa-phone"></i></a>
-
-<script>
-(function(){var n=document.getElementById('navbar');window.addEventListener('scroll',function(){n.classList.toggle('scrolled',window.scrollY>60);});})();
-(function(){var h=document.getElementById('hamburger'),m=document.getElementById('mobileMenu');h.addEventListener('click',function(){var o=m.classList.toggle('open');h.setAttribute('aria-expanded',o);});})();
-(function(){var els=document.querySelectorAll('.reveal');if(!els.length)return;var obs=new IntersectionObserver(function(entries){entries.forEach(function(e){if(e.isIntersecting){e.target.classList.add('visible');obs.unobserve(e.target);}});},{threshold:.15});els.forEach(function(el){obs.observe(el);});})();
-(function(){var b=document.getElementById('backTop');window.addEventListener('scroll',function(){b.classList.toggle('show',window.scrollY>400);});b.addEventListener('click',function(){window.scrollTo({top:0,behavior:'smooth'});});})();
-// FAQ accordion
-(function(){document.querySelectorAll('.faq-btn').forEach(function(btn){btn.addEventListener('click',function(){var item=btn.parentElement;var open=item.classList.contains('open');document.querySelectorAll('.faq-item').forEach(function(i){i.classList.remove('open');});if(!open)item.classList.add('open');});});})();
-</script>
 
 <script src="../js/main.js"></script>
 </body>
