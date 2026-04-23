@@ -321,3 +321,119 @@ textarea.form-control{resize:vertical;min-height:100px}
 .social-btn{width:36px;height:36px;border-radius:var(--r-sm);border:1px solid rgba(255,255,255,.12);display:flex;align-items:center;justify-content:center;color:rgba(255,255,255,.45);font-size:.85rem;transition:all var(--t) var(--ease)}
 .social-btn:hover{border-color:var(--sky);color:var(--sky);transform:translateY(-2px)}
 @media print{.navbar,.emergency-strip,#backTop,.hamburger,.mobile-menu{display:none!important}body{color:#000}}
+
+
+/*for gas flame*/
+/* 🔴 Premium Gas Card */
+.srv-red {
+  position: relative;
+  background: linear-gradient(145deg, #fff6f5, #ffe9e7);
+  color: #3b0a05;
+  border: 1px solid rgba(217, 41, 28, 0.15);
+  box-shadow:
+    0 10px 30px rgba(217, 41, 28, 0.08),
+    inset 0 1px 0 rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(6px);
+  transition: all .35s cubic-bezier(.4, 0, .2, 1);
+}
+
+/* Soft gradient overlay */
+.srv-red::before {
+  background: linear-gradient(120deg, rgba(255, 255, 255, 0.6), transparent);
+  opacity: 0;
+}
+
+/* 🔥 Premium hover */
+.srv-red:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow:
+    0 20px 60px rgba(217, 41, 28, 0.18),
+    0 0 0 1px rgba(217, 41, 28, 0.2);
+}
+
+.srv-red:hover::before {
+  opacity: 1;
+}
+.srv-red .card-icon-wrap {
+  background: linear-gradient(135deg, #fff, #ffe3e0);
+  color: #d9291c;
+  box-shadow:
+    0 6px 16px rgba(217, 41, 28, 0.15),
+    inset 0 1px 0 rgba(255, 255, 255, 0.7);
+  position: relative;
+  transition: all .35s ease;
+}
+
+/* Glow ring */
+.srv-red .card-icon-wrap::after {
+  content: "";
+  position: absolute;
+  inset: -6px;
+  border-radius: 18px;
+  background: radial-gradient(circle, rgba(255, 87, 34, 0.35), transparent 70%);
+  opacity: 0;
+  transition: .3s;
+}
+
+/* Hover effect */
+.srv-red:hover .card-icon-wrap {
+  transform: scale(1.15) rotate(-6deg);
+  box-shadow:
+    0 10px 30px rgba(217, 41, 28, 0.25);
+}
+
+.srv-red:hover .card-icon-wrap::after {
+  opacity: 1;
+}
+.srv-red .card-title {
+  font-weight: 900;
+  letter-spacing: -0.2px;
+}
+
+.srv-red .card-desc {
+  opacity: 0.75;
+  font-size: 0.82rem;
+}
+.srv-red .card-tag {
+  background: linear-gradient(135deg, #ff6b5f, #d9291c);
+  color: #fff;
+  box-shadow: 0 4px 12px rgba(217, 41, 28, 0.25);
+  border: none;
+}
+.srv-red .card-cta {
+  font-weight: 700;
+  position: relative;
+}
+
+/* underline animation */
+.srv-red .card-cta::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 0%;
+  height: 2px;
+  background: #d9291c;
+  transition: width .3s ease;
+}
+
+.srv-red:hover .card-cta::after {
+  width: 100%;
+}
+.srv-red::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 60%;
+  height: 100%;
+  background: linear-gradient(120deg,
+      transparent,
+      rgba(255, 255, 255, 0.4),
+      transparent);
+  transition: .6s;
+}
+
+.srv-red:hover::after {
+  left: 120%;
+}
