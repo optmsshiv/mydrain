@@ -24,65 +24,12 @@
       });
     }
 
-    // ── Dropdown hover-intent (fixes gap + flicker issue) ──
-    document.querySelectorAll('.has-dropdown').forEach(function(item){
-      var closeTimer;
-
-      function openDrop(){
-        clearTimeout(closeTimer);
-        // Close any other open dropdowns first
-        document.querySelectorAll('.has-dropdown.drop-open').forEach(function(other){
-          if(other!==item) other.classList.remove('drop-open');
-        });
-        item.classList.add('drop-open');
-      }
-
-      function schedulClose(){
-        clearTimeout(closeTimer);
-        closeTimer=setTimeout(function(){ item.classList.remove('drop-open'); },150);
-      }
-
-      item.addEventListener('mouseenter', openDrop);
-      item.addEventListener('mouseleave', schedulClose);
-
-      var drop=item.querySelector('.dropdown');
-      if(drop){
-        drop.addEventListener('mouseenter', function(){ clearTimeout(closeTimer); });
-        drop.addEventListener('mouseleave', schedulClose);
-      }
-
-      // Keyboard accessibility: Enter/Space on trigger toggles dropdown
-      var trigger=item.querySelector('.nav-link');
-      if(trigger){
-        trigger.addEventListener('keydown',function(e){
-          if(e.key==='Enter'||e.key===' '){
-            e.preventDefault();
-            item.classList.toggle('drop-open');
-          }
-          if(e.key==='Escape') item.classList.remove('drop-open');
-        });
-      }
-    });
-
-    // Close dropdown on outside click
-    document.addEventListener('click',function(e){
-      if(!e.target.closest('.has-dropdown')){
-        document.querySelectorAll('.has-dropdown.drop-open').forEach(function(i){ i.classList.remove('drop-open'); });
-      }
-    });
-
     // Active link
     var page=location.pathname.split('/').pop()||'index.html';
     document.querySelectorAll('.nav-link[href]').forEach(function(l){
       var href=l.getAttribute('href').split('/').pop().split('#')[0];
       if(href===page||(page===''&&href==='index.html'))l.classList.add('active');
     });
-
-    // ── Clean index.html from URL (home page shows domain only) ──
-    if(window.location.pathname.match(/\/index\.html$/)){
-      var clean=window.location.pathname.replace(/\/index\.html$/,'/')+window.location.search+window.location.hash;
-      window.history.replaceState(null,'',clean);
-    }
 
     // Scroll reveal
     var revEls=document.querySelectorAll('.reveal');

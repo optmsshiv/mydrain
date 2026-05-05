@@ -16,6 +16,19 @@
     crossorigin="anonymous" />
   <link rel="stylesheet" href="../css/style.css" />
   <style>
+    /* ── Dropdown fix: gap bridge so mouse can travel into the list ── */
+    /* Dropdown open state — synced with main.js (.drop-open) */
+    .has-dropdown.drop-open>.dropdown {
+      opacity: 1 !important;
+      pointer-events: all !important;
+      transform: translateX(-50%) translateY(0) !important;
+    }
+
+    .has-dropdown.drop-open .drop-arrow {
+      transform: rotate(180deg);
+    }
+  </style>
+  <style>
     .services-section {
       padding: clamp(60px, 8vw, 100px) 0;
       background: var(--off);
@@ -746,7 +759,7 @@
               class="fa-solid fa-chevron-down drop-arrow"></i></a>
           <ul class="dropdown">
             <li><a href="#services-grid" class="drop-item"><i class="fa-solid fa-sink"></i>Drain Cleaning</a></li>
-            <li><a href="#services-grid" class="drop-item"><i class="fa-solid fa-arrow-down-to-arc"></i>Sewer Line</a>
+            <li><a href="#services-grid" class="drop-item"><i class="fa-solid fa-arrow-down"></i>Sewer Line</a>
             </li>
             <li><a href="#services-grid" class="drop-item"><i class="fa-solid fa-bolt"></i>Emergency</a></li>
             <li><a href="#services-grid" class="drop-item"><i class="fa-solid fa-camera"></i>Camera Inspection</a></li>
@@ -784,9 +797,9 @@
       <div class="section-label"><i class="fa-solid fa-toolbox"></i>All Services</div>
       <h1>Our Plumbing <span style="color:var(--amber);">Services</span></h1>
       <p class="lead mt-3">Tap any card to explore — from everyday clogs to full sewer overhauls. Upfront pricing &amp;
-        1-year guarantee on every new job.</p>
+        1-year guarantee on every job.</p>
       <div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:28px;">
-        <a href="#services-grid" class="btn btn-outline btn-sm"><i class="fa-solid fa-grid-2"></i>Browse All
+        <a href="#services-grid" class="btn btn-outline btn-sm"><i class="fa-solid fa-table-cells"></i>Browse All
           Services</a>
         <a href="tel:+15168879687" class="btn btn-amber btn-sm"><i class="fa-solid fa-phone"></i>Call Now</a>
       </div>
@@ -850,11 +863,11 @@
         </div>
 
         <div class="srv-card srv-teal" tabindex="0" role="button" data-title="Sewer Cleaning"
-          data-icon="fa-solid fa-arrow-down-to-arc" data-color="#0d9e8f" data-subtitle="Deep clean your main sewer line"
+          data-icon="fa-solid fa-arrow-down" data-color="#0d9e8f" data-subtitle="Deep clean your main sewer line"
           data-why="Over time, grease, roots, and scale buildup can choke your main sewer line — causing slow drains throughout the house. We use high-pressure water jetting to completely flush out obstructions, restoring full flow capacity to your entire plumbing system."
           data-bullets='["High-pressure hydro-jetting","Main line descaling","Root cutting &amp; removal","Before &amp; after flow test"]'
           data-tags='["Hydro-Jet","Whole-Home"]' data-ctatext="Book Sewer Cleaning">
-          <div class="card-icon-wrap"><i class="fa-solid fa-arrow-down-to-arc"></i></div>
+          <div class="card-icon-wrap"><i class="fa-solid fa-arrow-down"></i></div>
           <div class="card-title">Sewer Cleaning</div>
           <div class="card-desc">Main sewer line flushed clean with high-pressure water jetting technology.</div>
           <div class="card-tag"><i class="fa-solid fa-droplet"></i>Hydro-Jet</div>
@@ -919,12 +932,12 @@
         </div>
 
         <div class="srv-card srv-navy srv-wide" tabindex="0" role="button" data-title="Sewer Line Services"
-          data-icon="fa-solid fa-pipe-valve" data-color="#0b1d35"
+          data-icon="fa-solid fa-faucet-drip" data-color="#0b1d35"
           data-subtitle="Repair, reline or replace your sewer line"
           data-why="Cracked, collapsed or root-invaded sewer lines require expert diagnosis and precise repair. We use trenchless techniques wherever possible — saving your yard, landscaping, and driveway from unnecessary excavation. All work is camera-verified before and after every job."
           data-bullets='["Trenchless pipe lining","Pipe bursting replacement","Root intrusion removal","Full excavation if needed","Camera-verified results","1-year labor guarantee"]'
           data-tags='["Trenchless Option","Camera-Verified","1-Year Guarantee"]' data-ctatext="Book Sewer Assessment">
-          <div class="card-icon-wrap"><i class="fa-solid fa-pipe-valve"></i></div>
+          <div class="card-icon-wrap"><i class="fa-solid fa-faucet-drip"></i></div>
           <div class="card-title">Sewer Line Services</div>
           <div class="card-desc">Repair, reline, or full replacement using modern trenchless methods — no yard
             destruction. Camera-verified before and after every job.</div>
@@ -971,18 +984,18 @@
           <div class="card-title">Main Line Backup</div>
           <div class="card-desc">Multiple drains backing up? That's a main line emergency — we dispatch immediately.
           </div>
-          <div class="card-tag"><i class="fa-solid fa-siren-on"></i>Priority</div>
+          <div class="card-tag"><i class="fa-solid fa-bell"></i>Priority</div>
           <div class="card-cta">Get urgent help <i class="fa-solid fa-arrow-right"></i></div>
           <div class="card-arrow"><i class="fa-solid fa-arrow-up-right"></i></div>
         </div>
 
         <div class="srv-card srv-orange" tabindex="0" role="button" data-title="Broken Drain Pipe"
-          data-icon="fa-solid fa-pipe-circle-xmark" data-color="#e8680a"
+          data-icon="fa-solid fa-circle-xmark" data-color="#e8680a"
           data-subtitle="Camera-located crack or break — repaired"
           data-why="Broken drain pipes can leak inside walls, under slabs, or underground — causing water damage, mold, and foundation issues. We locate the break using camera inspection, then repair or replace the damaged section with minimal disruption to your home."
           data-bullets='["Camera-located break","In-wall &amp; under-slab repair","Trenchless options available","Water damage prevention"]'
           data-tags='["Camera-Located","Minimal Disruption"]' data-ctatext="Repair Broken Pipe">
-          <div class="card-icon-wrap"><i class="fa-solid fa-pipe-circle-xmark"></i></div>
+          <div class="card-icon-wrap"><i class="fa-solid fa-circle-xmark"></i></div>
           <div class="card-title">Broken Drain Pipe</div>
           <div class="card-desc">Camera-located break diagnosis and repair — in-wall, under slab, or underground.</div>
           <div class="card-tag"><i class="fa-solid fa-camera"></i>Camera-Located</div>
@@ -1077,25 +1090,26 @@
         </div>
 
         <div class="srv-card srv-rose" tabindex="0" role="button" data-title="Emergency Drain Cleaning"
-          data-icon="fa-solid fa-burst" data-color="#e0245e" data-subtitle="Active overflow or backup — immediate help"
+          data-icon="fa-solid fa-star-of-life" data-color="#e0245e"
+          data-subtitle="Active overflow or backup — immediate help"
           data-why="When a drain is actively backing up or on the verge of overflowing, you need a tech — not an appointment. We dispatch emergency drain crews who carry all the tools needed to clear any drain on the spot, whether it's a single fixture or a whole-house backup."
           data-bullets='["Immediate emergency dispatch","All drain types cleared","Overflow containment","On-the-spot clearing — no delays"]'
           data-tags='["Immediate","Overflow Risk","All Drain Types"]' data-ctatext="Emergency Drain Help">
-          <div class="card-icon-wrap"><i class="fa-solid fa-burst"></i></div>
+          <div class="card-icon-wrap"><i class="fa-solid fa-star-of-life"></i></div>
           <div class="card-title">Emergency Drain Cleaning</div>
           <div class="card-desc">Overflow risk or active backup — immediate dispatch, cleared on the spot.</div>
-          <div class="card-tag"><i class="fa-solid fa-siren"></i>Immediate Dispatch</div>
+          <div class="card-tag"><i class="fa-solid fa-bell"></i>Immediate Dispatch</div>
           <div class="card-cta">Get help now <i class="fa-solid fa-arrow-right"></i></div>
           <div class="card-arrow"><i class="fa-solid fa-arrow-up-right"></i></div>
         </div>
 
         <div class="srv-card srv-teal" tabindex="0" role="button" data-title="Kitchen Sink Plumbing"
-          data-icon="fa-solid fa-kitchen-set" data-color="#0d9e8f"
+          data-icon="fa-solid fa-utensils" data-color="#0d9e8f"
           data-subtitle="Clogs, leaks, disposals — all in one visit"
           data-why="Kitchen sinks take on grease, food scraps, and soap daily — making them one of the most clog-prone fixtures in any home. We clear the drain, inspect the p-trap and drain arm, and can repair or replace garbage disposals, supply lines, and shut-off valves on the same visit."
           data-bullets='["Grease &amp; food clog removal","P-trap &amp; drain arm repair","Garbage disposal fix/replace","Supply line &amp; valve service"]'
           data-tags='["Same-Visit Repairs","Disposal Service"]' data-ctatext="Fix Kitchen Drain">
-          <div class="card-icon-wrap"><i class="fa-solid fa-kitchen-set"></i></div>
+          <div class="card-icon-wrap"><i class="fa-solid fa-utensils"></i></div>
           <div class="card-title">Kitchen Sink Plumbing</div>
           <div class="card-desc">Clogs, leaks, garbage disposal repair &amp; supply lines — handled in one visit.</div>
           <div class="card-tag"><i class="fa-solid fa-utensils"></i>Disposal Included</div>
@@ -1153,82 +1167,31 @@
         overflow: hidden;
         box-shadow: 0 8px 40px rgba(21,96,189,.25);
       ">
-        <!-- decorative bolt watermark -->
-        <div aria-hidden="true" style="
-          position:absolute;
-          right: -20px;
-          top: 50%;
-          transform: translateY(-50%);
-          font-size: 14rem;
-          color: rgba(255,255,255,.04);
-          line-height:1;
-          pointer-events:none;
-          user-select:none;
-        ">⚡</div>
-
+        <div aria-hidden="true"
+          style="position:absolute;right:-20px;top:50%;transform:translateY(-50%);font-size:14rem;color:rgba(255,255,255,.04);line-height:1;pointer-events:none;user-select:none;">
+          ⚡</div>
         <div style="display:flex;align-items:center;gap:24px;flex-wrap:wrap;position:relative;z-index:2;">
-          <!-- Icon badge -->
-          <div style="
-            width:68px;height:68px;
-            border-radius:18px;
-            background:rgba(255,255,255,.12);
-            display:flex;align-items:center;justify-content:center;
-            font-size:1.9rem;
-            flex-shrink:0;
-            border: 1.5px solid rgba(255,255,255,.2);
-          ">⚡</div>
-
+          <div
+            style="width:68px;height:68px;border-radius:18px;background:rgba(255,255,255,.12);display:flex;align-items:center;justify-content:center;font-size:1.9rem;flex-shrink:0;border:1.5px solid rgba(255,255,255,.2);">
+            ⚡</div>
           <div>
-            <div style="
-              font-size:.72rem;
-              font-weight:700;
-              letter-spacing:.12em;
-              color:rgba(255,255,255,.55);
-              text-transform:uppercase;
-              margin-bottom:4px;
-            ">Proud Partner</div>
-            <h3 style="
-              font-family:'Nunito',sans-serif;
-              font-weight:900;
-              font-size:clamp(1.2rem,2.5vw,1.7rem);
-              color:#fff;
-              margin:0 0 6px;
-              line-height:1.15;
-            ">Electrical Services by <span style="color:#f5c842;">St. Johns Electric</span></h3>
-            <p style="
-              color:rgba(255,255,255,.65);
-              font-size:.9rem;
-              margin:0;
-              max-width:480px;
-              line-height:1.6;
-            ">NSJR is proud to offer electrical services through St. Johns Electric — keeping the lights on for over 40
-              years. Whether it's a dripping faucet or a faulty outlet, we've got you covered. Proudly serving Lynbrook
-              and the surrounding areas.</p>
+            <div
+              style="font-size:.72rem;font-weight:700;letter-spacing:.12em;color:rgba(255,255,255,.55);text-transform:uppercase;margin-bottom:4px;">
+              Proud Partner</div>
+            <h3
+              style="font-family:'Nunito',sans-serif;font-weight:900;font-size:clamp(1.2rem,2.5vw,1.7rem);color:#fff;margin:0 0 6px;line-height:1.15;">
+              Electrical Services by <span style="color:#f5c842;">St. Johns Electric</span></h3>
+            <p style="color:rgba(255,255,255,.65);font-size:.9rem;margin:0;max-width:480px;line-height:1.6;">NSJR is
+              proud to offer electrical services through St. Johns Electric — keeping the lights on for over 40 years.
+              Whether it's a dripping faucet or a faulty outlet, we've got you covered. Proudly serving Lynbrook and the
+              surrounding areas.</p>
           </div>
         </div>
-
-        <a href="https://stjohnselectric.com" target="_blank" rel="noopener" style="
-          position:relative;z-index:2;
-          display:inline-flex;
-          align-items:center;
-          gap:10px;
-          background:#f5c842;
-          color:#0b1d35;
-          font-family:'Nunito',sans-serif;
-          font-weight:800;
-          font-size:.95rem;
-          padding:14px 28px;
-          border-radius:99px;
-          text-decoration:none;
-          white-space:nowrap;
-          box-shadow:0 4px 18px rgba(245,200,66,.35);
-          transition: transform .2s, box-shadow .2s;
-          flex-shrink:0;
-        " onmouseover="this.style.transform='translateY(-2px)';this.style.boxShadow='0 8px 28px rgba(245,200,66,.45)'"
+        <a href="https://stjohnselectric.com" target="_blank" rel="noopener"
+          style="position:relative;z-index:2;display:inline-flex;align-items:center;gap:10px;background:#f5c842;color:#0b1d35;font-family:'Nunito',sans-serif;font-weight:800;font-size:.95rem;padding:14px 28px;border-radius:99px;text-decoration:none;white-space:nowrap;box-shadow:0 4px 18px rgba(245,200,66,.35);transition:transform .2s,box-shadow .2s;flex-shrink:0;"
+          onmouseover="this.style.transform='translateY(-2px)';this.style.boxShadow='0 8px 28px rgba(245,200,66,.45)'"
           onmouseout="this.style.transform='';this.style.boxShadow='0 4px 18px rgba(245,200,66,.35)'">
-          <i class="fa-solid fa-bolt"></i>
-          Visit St. Johns Electric
-          <i class="fa-solid fa-arrow-up-right"></i>
+          <i class="fa-solid fa-bolt"></i>Visit St. Johns Electric<i class="fa-solid fa-arrow-up-right"></i>
         </a>
       </div>
     </div>

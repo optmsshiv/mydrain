@@ -478,7 +478,7 @@ p {
 
 .dropdown {
   position: absolute;
-  top: calc(100% + 14px);
+  top: calc(100% + 2px);
   left: 50%;
   transform: translateX(-50%) translateY(6px);
   background: var(--white);
@@ -493,7 +493,18 @@ p {
   z-index: 300
 }
 
+/* Invisible bridge fills the gap so mouse travel doesn't trigger mouseleave */
+.dropdown::before {
+  content: '';
+  position: absolute;
+  top: -14px;
+  left: 0;
+  right: 0;
+  height: 14px;
+}
+
 .has-dropdown:hover .dropdown,
+.has-dropdown.drop-open .dropdown,
 .has-dropdown:focus-within .dropdown {
   opacity: 1;
   pointer-events: all;
@@ -506,7 +517,8 @@ p {
   transition: transform var(--t)
 }
 
-.has-dropdown:hover .drop-arrow {
+.has-dropdown:hover .drop-arrow,
+.has-dropdown.drop-open .drop-arrow {
   transform: rotate(180deg)
 }
 
