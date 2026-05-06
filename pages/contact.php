@@ -29,9 +29,9 @@
       <p class="lead mt-3">Call, text, or fill out the form — we respond during business hours.
         Emergency? We pick up 24/7.</p>
       <div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:24px;">
-        <a href="tel:+1516-887-9687"
+        <a href="tel:+1 516-887-9687"
           style="display:inline-flex;align-items:center;gap:8px;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.2);border-radius:var(--r-pill);padding:9px 18px;color:var(--white);font-family:'Outfit',sans-serif;font-size:.85rem;font-weight:600;"><i
-            class="fa-solid fa-phone" style="color:var(--amber);"></i>+1 516-402-9213</a>
+            class="fa-solid fa-phone" style="color:var(--amber);"></i>+1 516-887-9687</a>
         <a href="mailto:info@nsjrplumbingli.com"
           style="display:inline-flex;align-items:center;gap:8px;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.2);border-radius:var(--r-pill);padding:9px 18px;color:var(--white);font-family:'Outfit',sans-serif;font-size:.85rem;font-weight:600;"><i
             class="fa-solid fa-envelope" style="color:var(--sky);"></i>info@nsjrplumbingli.com</a>
