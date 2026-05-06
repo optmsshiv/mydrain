@@ -157,6 +157,11 @@
       color: var(--navy);
     }
   </style>
+  <style>
+    /* Dropdown open state — driven by main.js (.drop-open) */
+    .has-dropdown.drop-open > .dropdown { opacity:1 !important; pointer-events:all !important; transform:translateX(-50%) translateY(0) !important; }
+    .has-dropdown.drop-open .drop-arrow { transform:rotate(180deg); }
+  </style>
 </head>
 
 <body>
@@ -174,12 +179,12 @@
           <a href="services.html" class="nav-link">Services <i class="fa-solid fa-chevron-down drop-arrow"></i></a>
           <ul class="dropdown">
             <li><a href="services.html#drain" class="drop-item"><i class="fa-solid fa-sink"></i>Drain Cleaning</a></li>
-            <li><a href="services.html#pipe" class="drop-item"><i class="fa-solid fa-pipe-valve"></i>Pipe Repair</a>
+            <li><a href="services.html#pipe" class="drop-item"><i class="fa-solid fa-faucet-drip"></i>Pipe Repair</a>
             </li>
             <li><a href="services.html#emergency" class="drop-item"><i class="fa-solid fa-bolt"></i>Emergency</a></li>
             <li><a href="services.html#heater" class="drop-item"><i class="fa-solid fa-fire-flame-curved"></i>Water
                 Heater</a></li>
-            <li><a href="services.html#sewer" class="drop-item"><i class="fa-solid fa-arrow-down-to-arc"></i>Sewer
+            <li><a href="services.html#sewer" class="drop-item"><i class="fa-solid fa-arrow-down"></i>Sewer
                 Line</a></li>
           </ul>
         </li>
@@ -682,6 +687,9 @@
       class="fa-solid fa-phone"></i></a>
 
   <script src="../js/main.js"></script>
+  <script>
+    if(window.location.pathname.match(//index.html$/)){window.history.replaceState(null,"",window.location.pathname.replace(//index.html$/,"/")+window.location.search+window.location.hash);}
+  </script>
 </body>
 
 </html>
