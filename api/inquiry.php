@@ -47,7 +47,7 @@ define('GMAIL_USER', 'drain.dr8@gmail.com');       // Gmail address that sends e
 define('GMAIL_PASS', 'eags cugf myvu nubg');        // Gmail App Password (16 chars)
 define('OWNER_EMAIL', 'drain.dr8@gmail.com');       // Where YOU receive inquiry alerts
 define('BUSINESS_NAME', 'Trailblazer Plumbing');
-define('BUSINESS_PHONE', '+1 516-402-9213');
+define('BUSINESS_PHONE', '+1 516-887-9687');
 define('BUSINESS_ADDRESS', '1204 Pipeline Ave, Dallas TX 75201');
 
 /* ══════════════════════════════════════════════════════════════ */
