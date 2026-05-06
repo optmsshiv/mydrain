@@ -92,18 +92,6 @@
       }
     }
   </style>
-  <style>
-    /* Dropdown open state — driven by main.js (.drop-open) */
-    .has-dropdown.drop-open>.dropdown {
-      opacity: 1 !important;
-      pointer-events: all !important;
-      transform: translateX(-50%) translateY(0) !important;
-    }
-
-    .has-dropdown.drop-open .drop-arrow {
-      transform: rotate(180deg);
-    }
-  </style>
 </head>
 
 <body>
@@ -119,8 +107,7 @@
     <div class="nav-wrap">
       <a href="index.html" class="nav-logo" aria-label="NSJR Inc. Plumbing Home">
         <img src="/assets/logo.jpeg" alt="NSJR Inc. Plumbing"
-          style="height:64px;width:64px;object-fit:contain;border-radius:6px;" /><span>NSJR Plumbing <span
-            class="logo-text-em">Inc.</span></span>
+          style="height:64px;width:64px;object-fit:contain;border-radius:6px;" /><span>NSJR Plumbing <span class="logo-text-em">Inc.</span></span>
       </a>
       <ul class="nav-menu">
         <li><a href="index.html" class="nav-link">Home</a></li>
@@ -130,13 +117,13 @@
           <ul class="dropdown">
             <li><a href="pages/services.html#drain" class="drop-item"><i class="fa-solid fa-sink"></i>Drain Cleaning</a>
             </li>
-            <li><a href="pages/services.html#pipe" class="drop-item"><i class="fa-solid fa-faucet-drip"></i>Pipe
+            <li><a href="pages/services.html#pipe" class="drop-item"><i class="fa-solid fa-pipe-valve"></i>Pipe
                 Repair</a></li>
             <li><a href="pages/services.html#emergency" class="drop-item"><i class="fa-solid fa-bolt"></i>Emergency
                 Service</a></li>
             <li><a href="pages/services.html#heater" class="drop-item"><i
                   class="fa-solid fa-fire-flame-curved"></i>Water Heater</a></li>
-            <li><a href="pages/services.html#sewer" class="drop-item"><i class="fa-solid fa-arrow-down"></i>Sewer
+            <li><a href="pages/services.html#sewer" class="drop-item"><i class="fa-solid fa-arrow-down-to-arc"></i>Sewer
                 Line</a></li>
           </ul>
         </li>
@@ -175,39 +162,17 @@
     <div class="container">
       <div class="hero-inner">
         <div>
-          <div class="hero-badge"><i class="fa-solid fa-star"></i>New construction, additions bathrooms and renovations</div>
+          <div class="hero-badge"><i class="fa-solid fa-star"></i>violations corrected. Maintain permits granted, basements legalized</div>
           <h1 id="hero-h">Fast, Reliable<br><span class="h1-accent">Plumbing</span> You Can<br><span
               class="h1-sky">Trust.</span></h1>
           <p class="hero-desc">Proudly Based in Lynbrook — Serving the Communities We Live In
-            NSJR Inc. is proudly based in Lynbrook, and we take pride in serving the same Nassau County communities we
-            live in every
-            day.</p>
+          NSJR Inc. is proudly based in Lynbrook, and we take pride in serving the same Nassau County communities we live in every
+          day.</p>
           <div class="hero-actions">
             <a href="pages/contact.html" class="btn btn-amber btn-lg"><i class="fa-solid fa-clipboard-list"></i>Get Free
               Quote</a>
             <a href="tel:+15168879687" class="btn btn-outline btn-lg"><i class="fa-solid fa-phone"></i>Call Now</a>
           </div>
-
-          <!-- St. Johns Electric Partner Strip -->
-          <div class="electric-strip reveal"
-            style="display:flex;align-items:center;gap:14px;background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.12);border-radius:14px;padding:13px 18px;margin-top:6px;backdrop-filter:blur(6px);max-width:460px;">
-            <div
-              style="width:40px;height:40px;flex-shrink:0;border-radius:10px;background:linear-gradient(135deg,#1560bd,#2993d1);display:flex;align-items:center;justify-content:center;font-size:1.1rem;color:#f5c842;">
-              ⚡</div>
-            <div style="flex:1;min-width:0;">
-              <div
-                style="font-size:.7rem;font-weight:700;letter-spacing:.09em;color:rgba(255,255,255,.5);text-transform:uppercase;">
-                Proud Partner</div>
-              <div style="font-size:.87rem;font-weight:700;color:#fff;margin-top:2px;line-height:1.3;">Electrical
-                Services by <span style="color:#f5c842;">St. Johns Electric</span> 
-                <div style="color:rgba(255,255,255,.45);font-weight:400;margin-top:2px;line-height:1.3;">We offer full electrical services</div></div>
-            </div>
-            <a href="https://stjohnselectric.com" target="_blank" rel="noopener"
-              style="flex-shrink:0;font-size:.78rem;font-weight:700;color:#f5c842;text-decoration:none;white-space:nowrap;border:1px solid rgba(245,200,66,.35);border-radius:8px;padding:6px 12px;transition:background .2s;"
-              onmouseover="this.style.background='rgba(245,200,66,.15)'" onmouseout="this.style.background=''">Visit
-              Site <i class="fa-solid fa-arrow-up-right" style="font-size:.65rem;"></i></a>
-          </div>
-
           <div class="hero-proof">
             <!-- STATS  
             <div>
@@ -355,25 +320,25 @@
           upfront quote, licensed technicians, and a satisfaction guarantee.</p>
       </div>
       <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:24px;">
-
+        
         <article class="card svc-card svc-card-blue reveal">
           <div class="svc-icon ic-blue">
             <i class="fa-solid fa-fire"></i>
           </div>
-
+        
           <h3>Gas, Heating & Compliance Work</h3>
-
+        
           <p>
             Gas pressure testing & certificates, gas meter restoration, plumbing violations correction,
             and complete boiler & heating system installations — all handled safely and professionally.
           </p>
-
+        
           <a href="pages/services.html#gas" class="card-link">
             See Details <i class="fa-solid fa-arrow-right"></i>
           </a>
         </article>
         <article class="card svc-card svc-card-amber reveal">
-          <div class="svc-icon ic-amber"><i class="fa-solid fa-faucet-drip"></i></div>
+          <div class="svc-icon ic-amber"><i class="fa-solid fa-pipe-valve"></i></div>
           <h3>Pipe Repair &amp; Replacement</h3>
           <p>Burst pipes, pinhole leaks, or corroded lines — we diagnose precisely and fix with lasting, code-compliant
             materials.</p><a href="pages/services.html#pipe" class="card-link">See Details <i
@@ -393,7 +358,7 @@
             href="pages/services.html#heater" class="card-link">See Details <i class="fa-solid fa-arrow-right"></i></a>
         </article>
         <article class="card svc-card svc-card-green reveal">
-          <div class="svc-icon ic-green"><i class="fa-solid fa-arrow-down"></i></div>
+          <div class="svc-icon ic-green"><i class="fa-solid fa-arrow-down-to-arc"></i></div>
           <h3>Sewer Line Services</h3>
           <p>Camera inspection, trenchless repair, and full replacement — done cleanly without destroying your yard.</p>
           <a href="pages/services.html#sewer" class="card-link">See Details <i class="fa-solid fa-arrow-right"></i></a>
@@ -490,8 +455,7 @@
         </div>
         <div class="reveal why-card why-card-green"><i class="fa-solid fa-shield-halved"
             style="font-size:1.8rem;color:var(--green);margin-bottom:12px;display:block;"></i>
-          <h4 class="mb-2">1-Year Warranty<p style="font-size:.68rem;">For new service only</p>
-          </h4>
+          <h4 class="mb-2">1-Year Warranty<p style="font-size:.68rem;">For new service only</p> </h4>
           <p style="font-size:.88rem;">Every repair is covered. If it fails, we come back free.</p>
         </div>
         <div class="reveal why-card why-card-sky"><i class="fa-solid fa-id-badge"
@@ -663,12 +627,6 @@
 
   <!-- SCRIPTS -->
   <script src="../js/main.js"></script>
-  <script>
-    /* Clean index.html from URL — show only domain on home page */
-    if (window.location.pathname.match(/\/index\.html$/)) {
-      window.history.replaceState(null, '', window.location.pathname.replace(/\/index\.html$/, '/') + window.location.search + window.location.hash);
-    }
-  </script>
 </body>
 
 </html>
