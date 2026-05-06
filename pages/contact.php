@@ -29,12 +29,12 @@
       <p class="lead mt-3">Call, text, or fill out the form — we respond during business hours.
         Emergency? We pick up 24/7.</p>
       <div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:24px;">
-        <a href="tel:+15168879687"
+        <a href="tel:+1516-887-9687"
           style="display:inline-flex;align-items:center;gap:8px;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.2);border-radius:var(--r-pill);padding:9px 18px;color:var(--white);font-family:'Outfit',sans-serif;font-size:.85rem;font-weight:600;"><i
             class="fa-solid fa-phone" style="color:var(--amber);"></i>+1 516-402-9213</a>
-        <a href="mailto:info@mydraindr.com"
+        <a href="mailto:info@nsjrplumbingli.com"
           style="display:inline-flex;align-items:center;gap:8px;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.2);border-radius:var(--r-pill);padding:9px 18px;color:var(--white);font-family:'Outfit',sans-serif;font-size:.85rem;font-weight:600;"><i
-            class="fa-solid fa-envelope" style="color:var(--sky);"></i>info@mydraindr.com</a>
+            class="fa-solid fa-envelope" style="color:var(--sky);"></i>info@nsjrplumbingli.com</a>
         <span
           style="display:inline-flex;align-items:center;gap:8px;background:rgba(245,166,35,.15);border:1px solid rgba(245,166,35,.3);border-radius:var(--r-pill);padding:9px 18px;color:var(--amber);font-family:'Outfit',sans-serif;font-size:.85rem;font-weight:600;"><i
             class="fa-solid fa-clock"></i>24/7 Emergency Line Open</span>
@@ -52,7 +52,7 @@
             <i class="fa-solid fa-phone"></i></div>
           <div>
             <div style="font-weight:700;color:var(--navy);font-size:.92rem;margin-bottom:2px;">Phone</div><a
-              href="tel:+15168879687" style="color:var(--blue);font-size:.88rem;font-weight:600;">516-887-9687</a>
+              href="tel:+1516-887-9687" style="color:var(--blue);font-size:.88rem;font-weight:600;">+1516-887-9687</a>
             <div style="font-size:.75rem;color:var(--gray3);">Office · Emergency: 24/7</div>
           </div>
         </div>
@@ -62,8 +62,8 @@
             <i class="fa-solid fa-envelope"></i></div>
           <div>
             <div style="font-weight:700;color:var(--navy);font-size:.92rem;margin-bottom:2px;">Email</div><a
-              href="mailto:info@mydraindr.com"
-              style="color:var(--blue);font-size:.82rem;font-weight:600;">info@mydraindr.com</a>
+              href="mailto:info@nsjrplumbingli.com"
+              style="color:var(--blue);font-size:.82rem;font-weight:600;">info@nsjrplumbingli.com</a>
             <div style="font-size:.75rem;color:var(--gray3);"></div>
           </div>
         </div>
@@ -174,7 +174,7 @@
                   })
                   .catch(function () {
                     msg.style.cssText = 'display:block;background:#fff5f4;color:#9b1c1c;border:1px solid #fecaca;border-radius:10px;padding:14px 16px;font-size:.88rem;font-weight:600;';
-                    msg.innerHTML = '<i class="fa-solid fa-circle-exclamation"></i> Connection error. Call <a href="tel:+15168879687" style="color:#9b1c1c;">516-887-9687</a>';
+                    msg.innerHTML = '<i class="fa-solid fa-circle-exclamation"></i> Connection error. Call <a href="tel:+1516-887-9687" style="color:#9b1c1c;">+1516-887-9687</a>';
                     btn.disabled = false; btn.innerHTML = 'Get My Free Quote <i class="fa-solid fa-arrow-right"></i>';
                   });
               });
@@ -222,7 +222,7 @@
                       if (d.ok) { msg.style.cssText = 'display:block;background:rgba(26,158,94,.2);color:#a7f3d0;border:1px solid rgba(26,158,94,.3);border-radius:8px;padding:10px 13px;font-size:.82rem;font-weight:600;'; msg.innerHTML = '<i class="fa-solid fa-circle-check"></i> Message sent! We\'ll be in touch soon.'; form.reset(); btn.innerHTML = '<i class="fa-solid fa-circle-check"></i> Sent!'; setTimeout(function () { btn.innerHTML = 'Send Message <i class="fa-solid fa-paper-plane"></i>'; btn.disabled = false; }, 5000); }
                       else { msg.style.cssText = 'display:block;background:rgba(217,41,28,.2);color:#fca5a5;border:1px solid rgba(217,41,28,.3);border-radius:8px;padding:10px 13px;font-size:.82rem;font-weight:600;'; msg.innerHTML = '<i class="fa-solid fa-circle-exclamation"></i> ' + (d.message || 'Error. Please call us.'); btn.disabled = false; btn.innerHTML = 'Send Message <i class="fa-solid fa-paper-plane"></i>'; }
                     })
-                    .catch(function () { msg.style.cssText = 'display:block;background:rgba(217,41,28,.2);color:#fca5a5;border:1px solid rgba(217,41,28,.3);border-radius:8px;padding:10px 13px;font-size:.82rem;font-weight:600;'; msg.innerHTML = '<i class="fa-solid fa-circle-exclamation"></i> Error. Call <a href="tel:+15168879687" style="color:#fca5a5;">516-887-9687</a>'; btn.disabled = false; btn.innerHTML = 'Send Message <i class="fa-solid fa-paper-plane"></i>'; });
+                    .catch(function () { msg.style.cssText = 'display:block;background:rgba(217,41,28,.2);color:#fca5a5;border:1px solid rgba(217,41,28,.3);border-radius:8px;padding:10px 13px;font-size:.82rem;font-weight:600;'; msg.innerHTML = '<i class="fa-solid fa-circle-exclamation"></i> Error. Call <a href="tel:+1516-887-9687" style="color:#fca5a5;">+1516-887-9687</a>'; btn.disabled = false; btn.innerHTML = 'Send Message <i class="fa-solid fa-paper-plane"></i>'; });
                 });
               })();
             </script>
@@ -376,8 +376,8 @@
             Surrounding Areas</span>
         </div>
         <p style="color:rgba(255,255,255,.4);font-size:.8rem;margin-top:20px;"><i class="fa-solid fa-info-circle"></i>
-          Not sure if we cover your area? Call us at <a href="tel:+15168879687"
-            style="color:rgba(255,255,255,.6);">516-887-9687</a> — we probably do.</p>
+          Not sure if we cover your area? Call us at <a href="tel:+1516-887-9687"
+            style="color:rgba(255,255,255,.6);">+1516-887-9687</a> — we probably do.</p>
       </div>
     </div>
   </section>
