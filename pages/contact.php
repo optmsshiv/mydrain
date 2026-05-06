@@ -1,39 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1.0" />
   <meta name="theme-color" content="#0b1d35" />
-  <title>Contact &amp; Free Quote | NSJR Inc. Plumbing — NYC, NY</title>
-  <meta name="description"
-    content="Contact NSJR Inc. Plumbing for plumbing services in NYC, NY. Get a free quote, call our 24/7 emergency line, or fill out our online form. Fast response guaranteed." />
+  <title>Contact &amp; Free Quote | NSJR Inc. Plumbing — Lynbrook, NY</title>
+  <meta name="description" content="Contact NSJR Inc. Plumbing for plumbing services in Lynbrook, NY. Get a free quote, call our 24/7 emergency line, or fill out our online form. Fast response guaranteed." />
   <meta name="robots" content="index,follow" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Nunito:wght@600;700;800;900&family=Outfit:wght@300;400;500;600;700&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap"
-    rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-    crossorigin="anonymous" />
-  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="canonical" href="https://www.mydraindr.com/pages/contact.php" />
+  <?php include '../components/head.php'; ?>
   <style>
     @media(max-width:768px) {
-      .contact-two-col {
-        grid-template-columns: 1fr !important;
-        gap: 36px !important;
-      }
+      .contact-two-col { grid-template-columns:1fr !important; gap:36px !important; }
     }
   </style>
-  <style>
-    /* Dropdown open state — driven by main.js (.drop-open) */
-    .has-dropdown.drop-open > .dropdown { opacity:1 !important; pointer-events:all !important; transform:translateX(-50%) translateY(0) !important; }
-    .has-dropdown.drop-open .drop-arrow { transform:rotate(180deg); }
-  </style>
 </head>
-
 <body>
-
+  <?php include '../components/navbar.php'; ?>
   <div class="emergency-strip"><i class="fa-solid fa-triangle-exclamation"></i>&nbsp;24/7 Emergency — Call or Text: <a
       href="tel:+17188085827">718-808-5827</a></div>
 
@@ -61,7 +44,7 @@
         <li><a href="contact.html" class="nav-link active">Contact</a></li>
       </ul>
       <div class="nav-actions">
-        <a href="tel:718-808-5827" class="nav-phone"><i class="fa-solid fa-phone"></i>516-887-9687</a>
+        <a href="tel:+15168879687" class="nav-phone"><i class="fa-solid fa-phone"></i>516-887-9687</a>
         <a href="#quote-form" class="btn btn-amber btn-sm">Free Quote</a>
       </div>
       <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false"
@@ -76,7 +59,7 @@
     <a href="contact.html" class="nav-link active">Contact</a>
     <div class="mobile-divider"></div>
     <div class="mobile-cta">
-      <a href="tel:718-808-5827" class="btn btn-amber btn-block"><i class="fa-solid fa-phone"></i>Call 516-887-9687</a>
+      <a href="tel:+15168879687" class="btn btn-amber btn-block"><i class="fa-solid fa-phone"></i>Call 516-887-9687</a>
       <a href="#quote-form" class="btn btn-ghost btn-block">Get Free Quote</a>
     </div>
   </div>
@@ -92,12 +75,12 @@
       <p class="lead mt-3">Call, text, or fill out the form — we respond during business hours.
         Emergency? We pick up 24/7.</p>
       <div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:24px;">
-        <a href="tel:718-808-5827"
+        <a href="tel:+15168879687"
           style="display:inline-flex;align-items:center;gap:8px;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.2);border-radius:var(--r-pill);padding:9px 18px;color:var(--white);font-family:'Outfit',sans-serif;font-size:.85rem;font-weight:600;"><i
             class="fa-solid fa-phone" style="color:var(--amber);"></i>+1 516-402-9213</a>
-        <a href="mailto:info@nsjrplumbingli.com"
+        <a href="mailto:info@mydraindr.com"
           style="display:inline-flex;align-items:center;gap:8px;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.2);border-radius:var(--r-pill);padding:9px 18px;color:var(--white);font-family:'Outfit',sans-serif;font-size:.85rem;font-weight:600;"><i
-            class="fa-solid fa-envelope" style="color:var(--sky);"></i>info@nsjrplumbingli.com</a>
+            class="fa-solid fa-envelope" style="color:var(--sky);"></i>info@mydraindr.com</a>
         <span
           style="display:inline-flex;align-items:center;gap:8px;background:rgba(245,166,35,.15);border:1px solid rgba(245,166,35,.3);border-radius:var(--r-pill);padding:9px 18px;color:var(--amber);font-family:'Outfit',sans-serif;font-size:.85rem;font-weight:600;"><i
             class="fa-solid fa-clock"></i>24/7 Emergency Line Open</span>
@@ -115,7 +98,7 @@
             <i class="fa-solid fa-phone"></i></div>
           <div>
             <div style="font-weight:700;color:var(--navy);font-size:.92rem;margin-bottom:2px;">Phone</div><a
-              href="tel:718-808-5827" style="color:var(--blue);font-size:.88rem;font-weight:600;">516-887-9687</a>
+              href="tel:+15168879687" style="color:var(--blue);font-size:.88rem;font-weight:600;">516-887-9687</a>
             <div style="font-size:.75rem;color:var(--gray3);">Office · Emergency: 24/7</div>
           </div>
         </div>
@@ -125,8 +108,8 @@
             <i class="fa-solid fa-envelope"></i></div>
           <div>
             <div style="font-weight:700;color:var(--navy);font-size:.92rem;margin-bottom:2px;">Email</div><a
-              href="mailto:info@nsjrplumbingli.com"
-              style="color:var(--blue);font-size:.82rem;font-weight:600;">info@nsjrplumbingli.com</a>
+              href="mailto:info@mydraindr.com"
+              style="color:var(--blue);font-size:.82rem;font-weight:600;">info@mydraindr.com</a>
             <div style="font-size:.75rem;color:var(--gray3);"></div>
           </div>
         </div>
@@ -237,7 +220,7 @@
                   })
                   .catch(function () {
                     msg.style.cssText = 'display:block;background:#fff5f4;color:#9b1c1c;border:1px solid #fecaca;border-radius:10px;padding:14px 16px;font-size:.88rem;font-weight:600;';
-                    msg.innerHTML = '<i class="fa-solid fa-circle-exclamation"></i> Connection error. Call <a href="tel:718-808-5827" style="color:#9b1c1c;">516-887-9687</a>';
+                    msg.innerHTML = '<i class="fa-solid fa-circle-exclamation"></i> Connection error. Call <a href="tel:+15168879687" style="color:#9b1c1c;">516-887-9687</a>';
                     btn.disabled = false; btn.innerHTML = 'Get My Free Quote <i class="fa-solid fa-arrow-right"></i>';
                   });
               });
@@ -285,7 +268,7 @@
                       if (d.ok) { msg.style.cssText = 'display:block;background:rgba(26,158,94,.2);color:#a7f3d0;border:1px solid rgba(26,158,94,.3);border-radius:8px;padding:10px 13px;font-size:.82rem;font-weight:600;'; msg.innerHTML = '<i class="fa-solid fa-circle-check"></i> Message sent! We\'ll be in touch soon.'; form.reset(); btn.innerHTML = '<i class="fa-solid fa-circle-check"></i> Sent!'; setTimeout(function () { btn.innerHTML = 'Send Message <i class="fa-solid fa-paper-plane"></i>'; btn.disabled = false; }, 5000); }
                       else { msg.style.cssText = 'display:block;background:rgba(217,41,28,.2);color:#fca5a5;border:1px solid rgba(217,41,28,.3);border-radius:8px;padding:10px 13px;font-size:.82rem;font-weight:600;'; msg.innerHTML = '<i class="fa-solid fa-circle-exclamation"></i> ' + (d.message || 'Error. Please call us.'); btn.disabled = false; btn.innerHTML = 'Send Message <i class="fa-solid fa-paper-plane"></i>'; }
                     })
-                    .catch(function () { msg.style.cssText = 'display:block;background:rgba(217,41,28,.2);color:#fca5a5;border:1px solid rgba(217,41,28,.3);border-radius:8px;padding:10px 13px;font-size:.82rem;font-weight:600;'; msg.innerHTML = '<i class="fa-solid fa-circle-exclamation"></i> Error. Call <a href="tel:718-808-5827" style="color:#fca5a5;">516-887-9687</a>'; btn.disabled = false; btn.innerHTML = 'Send Message <i class="fa-solid fa-paper-plane"></i>'; });
+                    .catch(function () { msg.style.cssText = 'display:block;background:rgba(217,41,28,.2);color:#fca5a5;border:1px solid rgba(217,41,28,.3);border-radius:8px;padding:10px 13px;font-size:.82rem;font-weight:600;'; msg.innerHTML = '<i class="fa-solid fa-circle-exclamation"></i> Error. Call <a href="tel:+15168879687" style="color:#fca5a5;">516-887-9687</a>'; btn.disabled = false; btn.innerHTML = 'Send Message <i class="fa-solid fa-paper-plane"></i>'; });
                 });
               })();
             </script>
@@ -439,78 +422,14 @@
             Surrounding Areas</span>
         </div>
         <p style="color:rgba(255,255,255,.4);font-size:.8rem;margin-top:20px;"><i class="fa-solid fa-info-circle"></i>
-          Not sure if we cover your area? Call us at <a href="tel:718-808-5827"
+          Not sure if we cover your area? Call us at <a href="tel:+15168879687"
             style="color:rgba(255,255,255,.6);">516-887-9687</a> — we probably do.</p>
       </div>
     </div>
   </section>
 
   <!-- FOOTER -->
-  <footer class="site-footer">
-    <div class="container">
-      <div class="footer-grid">
-        <div class="footer-brand">
-          <a href="../index.html" class="nav-logo"><img src="/assets/logo.jpeg" alt="NSJR Inc. Plumbing"
-              style="height:94px;width:94px;object-fit:contain;border-radius:6px;" /></a>
-          <p>Serving with fast, honest plumbing for homes and businesses.</p>
-          <div class="footer-socials mt-5">
-            <a href="#" class="social-btn" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
-            <a href="#" class="social-btn" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
-            <a href="#" class="social-btn" aria-label="X"><i class="fa-brands fa-x-twitter"></i></a>
-            <a href="#" class="social-btn" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
-          </div>
-        </div>
-        <div>
-          <div class="footer-col-title">Quick Links</div>
-          <ul class="footer-links">
-            <li><a href="../index.html"><i class="fa-solid fa-chevron-right"></i>Home</a></li>
-            <li><a href="services.html"><i class="fa-solid fa-chevron-right"></i>Services</a></li>
-            <li><a href="about.html"><i class="fa-solid fa-chevron-right"></i>About</a></li>
-            <li><a href="blog.html"><i class="fa-solid fa-chevron-right"></i>Blog</a></li>
-            <li><a href="contact.html"><i class="fa-solid fa-chevron-right"></i>Contact</a></li>
-          </ul>
-        </div>
-        <div>
-          <div class="footer-col-title">Services</div>
-          <ul class="footer-links">
-            <li><a href="services.html#drain"><i class="fa-solid fa-chevron-right"></i>Drain Cleaning</a></li>
-            <li><a href="services.html#pipe"><i class="fa-solid fa-chevron-right"></i>Pipe Repair</a></li>
-            <li><a href="services.html#leak"><i class="fa-solid fa-chevron-right"></i>Gas Work</a></li>
-            <li><a href="services.html#emergency"><i class="fa-solid fa-chevron-right"></i>Emergency</a></li>
-            <li><a href="services.html#heater"><i class="fa-solid fa-chevron-right"></i>Water Heater</a></li>
-            <li><a href="services.html#sewer"><i class="fa-solid fa-chevron-right"></i>Sewer Line</a></li>
-          </ul>
-        </div>
-        <div>
-          <div class="footer-col-title">Contact</div>
-          <div class="footer-contact-row"><i class="fa-solid fa-phone"></i><a href="tel:718-808-5827"
-              style="color:rgba(255,255,255,.65);">516-887-9687</a></div>
-          <div class="footer-contact-row"><i class="fa-solid fa-envelope"></i><a href="mailto:info@nsjrplumbingli.com"
-              style="color:rgba(255,255,255,.65);">info@nsjrplumbingli.com</a></div>
-          <div class="footer-contact-row"><i class="fa-solid fa-map-location-dot"></i><span
-              style="color:rgba(255,255,255,.5);">Lynbrook</span></div>
-          <div class="footer-contact-row"><i class="fa-solid fa-clock"></i><span>Mon–Sun 24Hrs<br><span
-                style="color:var(--amber);">Emergency 24/7</span></span></div>
-        </div>
-      </div>
-      <div class="footer-bottom">
-        <span>© 2026 NSJR Inc. Plumbing. All rights reserved.</span>
-        <div style="display:flex;gap:16px;">
-          <a href="#" style="color:rgba(255,255,255,.3);font-size:.78rem;">Privacy Policy</a>
-          <a href="#" style="color:rgba(255,255,255,.3);font-size:.78rem;">Terms of Service</a>
-        </div>
-      </div>
-    </div>
-  </footer>
 
-  <button id="backTop" aria-label="Back to top"><i class="fa-solid fa-chevron-up"></i></button>
-  <a href="tel:+17188085827" class="floating-btn floating-btn--call" aria-label="Call us"><i
-      class="fa-solid fa-phone"></i></a>
-
-  <script src="../js/main.js"></script>
-  <script>
-    if(window.location.pathname.match(//index.html$/)){window.history.replaceState(null,"",window.location.pathname.replace(//index.html$/,"/")+window.location.search+window.location.hash);}
-  </script>
+  <?php include '../components/footer.php'; ?>
 </body>
-
 </html>

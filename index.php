@@ -1,160 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1.0" />
   <meta name="theme-color" content="#0b1d35" />
   <title>NSJR Inc. Plumbing | Same-Day Plumbing Services in Lynbrook &amp; Nassau County, NY</title>
-  <meta name="description"
-    content="NSJR Inc. Plumbing offers licensed, insured plumbing services in Lynbrook &amp; Nassau County, NY. Drain cleaning, pipe repair, emergency plumbing, water heaters &amp; more. Same-day service, upfront pricing, 24/7 availability." />
-  <meta name="keywords"
-    content="plumber Lynbrook NY, drain cleaning Nassau County, emergency plumber Lynbrook, pipe repair Nassau County, water heater installation, plumbing services Long Island, NSJR Inc. plumbing" />
+  <meta name="description" content="NSJR Inc. Plumbing offers licensed, insured plumbing services in Lynbrook &amp; Nassau County, NY. Drain cleaning, pipe repair, emergency plumbing, water heaters &amp; more. Same-day service, upfront pricing, 24/7 availability." />
+  <meta name="keywords" content="plumber Lynbrook NY, drain cleaning Nassau County, emergency plumber Lynbrook, pipe repair Nassau County, water heater installation, plumbing services Long Island, NSJR Inc. plumbing" />
   <meta name="author" content="NSJR Inc. Plumbing" />
   <meta name="robots" content="index,follow" />
   <link rel="canonical" href="https://www.mydraindr.com/" />
   <meta property="og:type" content="website" />
   <meta property="og:title" content="NSJR Inc. Plumbing | Expert Plumbing &amp; Drain Services" />
-  <meta property="og:description"
-    content="Fast, reliable plumbing for New York. Licensed &amp; insured. 24/7 emergency service. Upfront pricing, no hidden fees." />
+  <meta property="og:description" content="Fast, reliable plumbing for New York. Licensed &amp; insured. 24/7 emergency service. Upfront pricing, no hidden fees." />
   <meta property="og:url" content="https://www.mydraindr.com/" />
   <meta property="og:image" content="https://www.mydraindr.com/images/og-image.jpg" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="NSJR Inc. Plumbing | Expert Plumbing Services" />
-  <meta name="twitter:description"
-    content="Fast, reliable plumbing for New York. Licensed &amp; insured. 24/7 emergency service." />
+  <meta name="twitter:description" content="Fast, reliable plumbing for New York. Licensed &amp; insured. 24/7 emergency service." />
   <meta name="twitter:image" content="https://www.mydraindr.com/images/twitter-image.jpg" />
-  <script
-    type="application/ld+json">{"@context":"https://schema.org","@type":"Plumber","name":"My Drain DR","url":"https://www.mydraindr.com","telephone":"+15168879687","address":{"@type":"PostalAddress","streetAddress":"Lynbrook","addressLocality":"Lynbrook","addressRegion":"NY","postalCode":"11563","addressCountry":"US"},"openingHours":"Mo-Sa 07:00-20:00","aggregateRating":{"@type":"AggregateRating","ratingValue":"4.9","reviewCount":"624"}}</script>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Nunito:wght@600;700;800;900&family=Outfit:wght@300;400;500;600;700&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap"
-    rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-    crossorigin="anonymous" />
-  <link rel="stylesheet" href="css/style.css" />
-  <style>
-    .floating-btn {
-      overflow: visible;
-      isolation: isolate;
-    }
-
-    .floating-btn i {
-      position: relative;
-      z-index: 2;
-    }
-
-    .floating-btn::before,
-    .floating-btn::after {
-      content: "";
-      position: absolute;
-      inset: 0;
-      border-radius: 50%;
-      border: 2px solid currentColor;
-      opacity: 0;
-      pointer-events: none;
-    }
-
-    .floating-btn::before {
-      z-index: 0;
-      animation: floating-ring-ripple 2.4s ease-out infinite;
-    }
-
-    .floating-btn::after {
-      z-index: 1;
-      animation: floating-ring-ripple 2.4s ease-out .9s infinite;
-    }
-
-    .floating-btn--call::before,
-    .floating-btn--call::after {
-      border-color: rgba(125, 209, 255, 0.72);
-    }
-
-    .floating-btn--whatsapp::before,
-    .floating-btn--whatsapp::after {
-      border-color: rgba(103, 255, 173, 0.68);
-    }
-
-    @keyframes floating-ring-ripple {
-      0% {
-        transform: scale(1);
-        opacity: 0.9;
-      }
-
-      70% {
-        opacity: 0.2;
-      }
-
-      100% {
-        transform: scale(1.75);
-        opacity: 0;
-      }
-    }
-  </style>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Plumber","name":"My Drain DR","url":"https://www.mydraindr.com","telephone":"+15168879687","address":{"@type":"PostalAddress","streetAddress":"Lynbrook","addressLocality":"Lynbrook","addressRegion":"NY","postalCode":"11563","addressCountry":"US"},"openingHours":"Mo-Sa 07:00-20:00","aggregateRating":{"@type":"AggregateRating","ratingValue":"4.9","reviewCount":"624"}}</script>
+  <?php include 'components/head.php'; ?>
 </head>
-
 <body>
-
-  <!-- Emergency Strip -->
-  <div class="emergency-strip">
-    <i class="fa-solid fa-triangle-exclamation"></i>&nbsp;
-    24/7 Emergency Plumbing — Call or Text:&nbsp;<a href="tel:+17188085827">718-808-5827</a>
-  </div>
-
-  <!-- NAVBAR -->
-  <nav class="navbar" id="navbar" aria-label="Main navigation">
-    <div class="nav-wrap">
-      <a href="index.html" class="nav-logo" aria-label="NSJR Inc. Plumbing Home">
-        <img src="/assets/logo.jpeg" alt="NSJR Inc. Plumbing"
-          style="height:64px;width:64px;object-fit:contain;border-radius:6px;" /><span>NSJR Plumbing <span class="logo-text-em">Inc.</span></span>
-      </a>
-      <ul class="nav-menu">
-        <li><a href="index.html" class="nav-link">Home</a></li>
-        <li class="has-dropdown">
-          <a href="pages/services.html" class="nav-link">Services <i
-              class="fa-solid fa-chevron-down drop-arrow"></i></a>
-          <ul class="dropdown">
-            <li><a href="pages/services.html#drain" class="drop-item"><i class="fa-solid fa-sink"></i>Drain Cleaning</a>
-            </li>
-            <li><a href="pages/services.html#pipe" class="drop-item"><i class="fa-solid fa-pipe-valve"></i>Pipe
-                Repair</a></li>
-            <li><a href="pages/services.html#emergency" class="drop-item"><i class="fa-solid fa-bolt"></i>Emergency
-                Service</a></li>
-            <li><a href="pages/services.html#heater" class="drop-item"><i
-                  class="fa-solid fa-fire-flame-curved"></i>Water Heater</a></li>
-            <li><a href="pages/services.html#sewer" class="drop-item"><i class="fa-solid fa-arrow-down-to-arc"></i>Sewer
-                Line</a></li>
-          </ul>
-        </li>
-        <li><a href="pages/about.html" class="nav-link">About</a></li>
-        <li><a href="pages/blog.html" class="nav-link">Blog</a></li>
-        <li><a href="pages/contact.html" class="nav-link">Contact</a></li>
-      </ul>
-      <div class="nav-actions">
-        <a href="tel:+15168879687" class="nav-phone"><i class="fa-solid fa-phone"></i>516-887-9687</a>
-        <a href="pages/contact.html" class="btn btn-amber btn-sm">Free Quote</a>
-      </div>
-      <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false"
-        aria-controls="mobileMenu">
-        <span></span><span></span><span></span>
-      </button>
-    </div>
-  </nav>
-  <div class="mobile-menu" id="mobileMenu">
-    <a href="index.html" class="nav-link">Home</a>
-    <a href="pages/services.html" class="nav-link">Services</a>
-    <a href="pages/about.html" class="nav-link">About</a>
-    <a href="pages/blog.html" class="nav-link">Blog</a>
-    <a href="pages/contact.html" class="nav-link">Contact</a>
-    <div class="mobile-divider"></div>
-    <div class="mobile-cta">
-      <a href="tel:+15168879687" class="btn btn-amber btn-block"><i class="fa-solid fa-phone"></i>Call 516-887-9687</a>
-      <a href="pages/contact.html" class="btn btn-ghost btn-block"><i class="fa-solid fa-file-lines"></i>Get Free
-        Quote</a>
-    </div>
-  </div>
-
+  <?php include 'components/navbar.php'; ?>
   <!-- HERO -->
   <section class="hero" aria-labelledby="hero-h">
     <div class="hero-dots" aria-hidden="true"></div>
@@ -162,17 +31,39 @@
     <div class="container">
       <div class="hero-inner">
         <div>
-          <div class="hero-badge"><i class="fa-solid fa-star"></i>violations corrected. Maintain permits granted, basements legalized</div>
+          <div class="hero-badge"><i class="fa-solid fa-star"></i>New construction, additions bathrooms and renovations</div>
           <h1 id="hero-h">Fast, Reliable<br><span class="h1-accent">Plumbing</span> You Can<br><span
               class="h1-sky">Trust.</span></h1>
           <p class="hero-desc">Proudly Based in Lynbrook — Serving the Communities We Live In
-          NSJR Inc. is proudly based in Lynbrook, and we take pride in serving the same Nassau County communities we live in every
-          day.</p>
+            NSJR Inc. is proudly based in Lynbrook, and we take pride in serving the same Nassau County communities we
+            live in every
+            day.</p>
           <div class="hero-actions">
             <a href="pages/contact.html" class="btn btn-amber btn-lg"><i class="fa-solid fa-clipboard-list"></i>Get Free
               Quote</a>
             <a href="tel:+15168879687" class="btn btn-outline btn-lg"><i class="fa-solid fa-phone"></i>Call Now</a>
           </div>
+
+          <!-- St. Johns Electric Partner Strip -->
+          <div class="electric-strip reveal"
+            style="display:flex;align-items:center;gap:14px;background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.12);border-radius:14px;padding:13px 18px;margin-top:6px;backdrop-filter:blur(6px);max-width:460px;">
+            <div
+              style="width:40px;height:40px;flex-shrink:0;border-radius:10px;background:linear-gradient(135deg,#1560bd,#2993d1);display:flex;align-items:center;justify-content:center;font-size:1.1rem;color:#f5c842;">
+              ⚡</div>
+            <div style="flex:1;min-width:0;">
+              <div
+                style="font-size:.7rem;font-weight:700;letter-spacing:.09em;color:rgba(255,255,255,.5);text-transform:uppercase;">
+                Proud Partner</div>
+              <div style="font-size:.87rem;font-weight:700;color:#fff;margin-top:2px;line-height:1.3;">Electrical
+                Services by <span style="color:#f5c842;">St. Johns Electric</span> 
+                <div style="color:rgba(255,255,255,.45);font-weight:400;margin-top:2px;line-height:1.3;">we offer full electrical services thru st. Johns Electric. Whether you have a dripping faucet or faulty outlet. We got you covered !</div></div>
+            </div>
+            <a href="https://stjohnselectric.com" target="_blank" rel="noopener"
+              style="flex-shrink:0;font-size:.78rem;font-weight:700;color:#f5c842;text-decoration:none;white-space:nowrap;border:1px solid rgba(245,200,66,.35);border-radius:8px;padding:6px 12px;transition:background .2s;"
+              onmouseover="this.style.background='rgba(245,200,66,.15)'" onmouseout="this.style.background=''">Visit
+              Site <i class="fa-solid fa-arrow-up-right" style="font-size:.65rem;"></i></a>
+          </div>
+
           <div class="hero-proof">
             <!-- STATS  
             <div>
@@ -320,25 +211,25 @@
           upfront quote, licensed technicians, and a satisfaction guarantee.</p>
       </div>
       <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:24px;">
-        
+
         <article class="card svc-card svc-card-blue reveal">
           <div class="svc-icon ic-blue">
             <i class="fa-solid fa-fire"></i>
           </div>
-        
+
           <h3>Gas, Heating & Compliance Work</h3>
-        
+
           <p>
             Gas pressure testing & certificates, gas meter restoration, plumbing violations correction,
             and complete boiler & heating system installations — all handled safely and professionally.
           </p>
-        
+
           <a href="pages/services.html#gas" class="card-link">
             See Details <i class="fa-solid fa-arrow-right"></i>
           </a>
         </article>
         <article class="card svc-card svc-card-amber reveal">
-          <div class="svc-icon ic-amber"><i class="fa-solid fa-pipe-valve"></i></div>
+          <div class="svc-icon ic-amber"><i class="fa-solid fa-faucet-drip"></i></div>
           <h3>Pipe Repair &amp; Replacement</h3>
           <p>Burst pipes, pinhole leaks, or corroded lines — we diagnose precisely and fix with lasting, code-compliant
             materials.</p><a href="pages/services.html#pipe" class="card-link">See Details <i
@@ -358,7 +249,7 @@
             href="pages/services.html#heater" class="card-link">See Details <i class="fa-solid fa-arrow-right"></i></a>
         </article>
         <article class="card svc-card svc-card-green reveal">
-          <div class="svc-icon ic-green"><i class="fa-solid fa-arrow-down-to-arc"></i></div>
+          <div class="svc-icon ic-green"><i class="fa-solid fa-arrow-down"></i></div>
           <h3>Sewer Line Services</h3>
           <p>Camera inspection, trenchless repair, and full replacement — done cleanly without destroying your yard.</p>
           <a href="pages/services.html#sewer" class="card-link">See Details <i class="fa-solid fa-arrow-right"></i></a>
@@ -455,7 +346,8 @@
         </div>
         <div class="reveal why-card why-card-green"><i class="fa-solid fa-shield-halved"
             style="font-size:1.8rem;color:var(--green);margin-bottom:12px;display:block;"></i>
-          <h4 class="mb-2">1-Year Warranty<p style="font-size:.68rem;">For new service only</p> </h4>
+          <h4 class="mb-2">1-Year Warranty<p style="font-size:.68rem;">For new service only</p>
+          </h4>
           <p style="font-size:.88rem;">Every repair is covered. If it fails, we come back free.</p>
         </div>
         <div class="reveal why-card why-card-sky"><i class="fa-solid fa-id-badge"
@@ -558,75 +450,7 @@
   </section>
 
   <!-- FOOTER -->
-  <footer class="site-footer">
-    <div class="container">
-      <div class="footer-grid">
-        <div class="footer-brand">
-          <a href="../index.html" class="nav-logo"><img src="/assets/logo.jpeg" alt="NSJR Inc. Plumbing"
-              style="height:94px;width:94px;object-fit:contain;border-radius:6px;" /></a>
-          <p>Serving with fast, honest plumbing for homes and businesses.</p>
-          <div class="footer-socials mt-5">
-            <a href="#" class="social-btn" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
-            <a href="#" class="social-btn" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
-            <a href="#" class="social-btn" aria-label="X"><i class="fa-brands fa-x-twitter"></i></a>
-            <a href="#" class="social-btn" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
-          </div>
-        </div>
-        <div>
-          <div class="footer-col-title">Quick Links</div>
-          <ul class="footer-links">
-            <li><a href="../index.html"><i class="fa-solid fa-chevron-right"></i>Home</a></li>
-            <li><a href="/pages/services.html"><i class="fa-solid fa-chevron-right"></i>Services</a></li>
-            <li><a href="/pages/about.html"><i class="fa-solid fa-chevron-right"></i>About</a></li>
-            <li><a href="/pages/blog.html"><i class="fa-solid fa-chevron-right"></i>Blog</a></li>
-            <li><a href="/pages/contact.html"><i class="fa-solid fa-chevron-right"></i>Contact</a></li>
-          </ul>
-        </div>
-        <div>
-          <div class="footer-col-title">Services</div>
-          <ul class="footer-links">
-            <li><a href="/pages/services.html#drain"><i class="fa-solid fa-chevron-right"></i>Drain Cleaning</a></li>
-            <li><a href="/pages/services.html#pipe"><i class="fa-solid fa-chevron-right"></i>Pipe Repair</a></li>
-            <li><a href="/pages/services.html#leak"><i class="fa-solid fa-chevron-right"></i>Gas Work</a></li>
-            <li><a href="/pages/services.html#emergency"><i class="fa-solid fa-chevron-right"></i>Emergency</a></li>
-            <li><a href="/pages/services.html#heater"><i class="fa-solid fa-chevron-right"></i>Water Heater</a></li>
-            <li><a href="services.html#sewer"><i class="fa-solid fa-chevron-right"></i>Sewer Line</a></li>
-          </ul>
-        </div>
-        <div>
-          <div class="footer-col-title">Contact</div>
-          <div class="footer-contact-row"><i class="fa-solid fa-phone"></i><a href="tel:+15168879687"
-              style="color:rgba(255,255,255,.65);">516-887-9687</a></div>
-          <div class="footer-contact-row"><i class="fa-solid fa-envelope"></i><a href="mailto:info@mydraindr.com"
-              style="color:rgba(255,255,255,.65);">info@mydraindr.com</a></div>
-          <div class="footer-contact-row"><i class="fa-solid fa-map-location-dot"></i><span
-              style="color:rgba(255,255,255,.5);">Lynbrook</span></div>
-          <div class="footer-contact-row"><i class="fa-solid fa-clock"></i><span>Mon–Sun 24Hrs<br><span
-                style="color:var(--amber);">Emergency 24/7</span></span></div>
-        </div>
-      </div>
-      <div class="footer-bottom">
-        <span>© 2026 NSJR Inc. Plumbing. All rights reserved.</span>
-        <div style="display:flex;gap:16px;">
-          <a href="#" style="color:rgba(255,255,255,.3);font-size:.78rem;">Privacy Policy</a>
-          <a href="#" style="color:rgba(255,255,255,.3);font-size:.78rem;">Terms of Service</a>
-        </div>
-      </div>
-    </div>
-  </footer>
 
-  <!-- FLOATING ACTION BUTTONS -->
-  <a href="tel:+17188085827" class="floating-btn floating-btn--call" aria-label="Call us"><i
-      class="fa-solid fa-phone"></i></a>
-  <a href="https://wa.me/17188085827" class="floating-btn floating-btn--whatsapp" aria-label="Chat on WhatsApp"
-    target="_blank" rel="noreferrer noopener"><i class="fa-brands fa-whatsapp"></i></a>
-
-  <!-- BACK TO TOP -->
-  <button id="backTop" aria-label="Back to top"><i class="fa-solid fa-chevron-up"></i></button>
-
-
-  <!-- SCRIPTS -->
-  <script src="../js/main.js"></script>
+  <?php include 'components/footer.php'; ?>
 </body>
-
 </html>
