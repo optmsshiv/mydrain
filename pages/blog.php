@@ -8,7 +8,7 @@
   <meta name="description" content="Expert plumbing tips, DIY guides, and advice from licensed plumbers at NSJR Inc. Plumbing. Learn how to maintain your pipes, save water, and prevent costly repairs in Lynbrook, NY." />
   <meta name="robots" content="index,follow" />
   <link rel="canonical" href="https://www.mydraindr.com/pages/blog.php" />
-  
+  <?php include '../components/head.php'; ?>
   <style>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
     crossorigin="anonymous" />
