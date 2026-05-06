@@ -10,10 +10,6 @@
   <link rel="canonical" href="https://www.mydraindr.com/pages/about.php" />
   <?php include '../components/head.php'; ?>
   <style>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-    crossorigin="anonymous" />
-  <link rel="stylesheet" href="../css/style.css" />
-  <style>
     /* About page extras */
     .timeline {
       display: flex;
@@ -152,52 +148,6 @@
 </head>
 <body>
   <?php include '../components/navbar.php'; ?>
-  <div class="emergency-strip"><i class="fa-solid fa-triangle-exclamation"></i>&nbsp;24/7 Emergency — Call or Text: <a
-      href="tel:+17188085827">718-808-5827</a></div>
-
-  <nav class="navbar" id="navbar">
-    <div class="nav-wrap">
-      <a href="../index.html" class="nav-logo"><img src="/assets/logo.jpeg" alt="NSJR Inc. Plumbing"
-          style="height:64px;width:64px;object-fit:contain;border-radius:6px;" /> <span>NSJR Plumbing <span class="logo-text-em">Inc.</span></span></a>
-      <ul class="nav-menu">
-        <li><a href="../index.html" class="nav-link">Home</a></li>
-        <li class="has-dropdown">
-          <a href="services.html" class="nav-link">Services <i class="fa-solid fa-chevron-down drop-arrow"></i></a>
-          <ul class="dropdown">
-            <li><a href="services.html#drain" class="drop-item"><i class="fa-solid fa-sink"></i>Drain Cleaning</a></li>
-            <li><a href="services.html#pipe" class="drop-item"><i class="fa-solid fa-faucet-drip"></i>Pipe Repair</a>
-            </li>
-            <li><a href="services.html#emergency" class="drop-item"><i class="fa-solid fa-bolt"></i>Emergency</a></li>
-            <li><a href="services.html#heater" class="drop-item"><i class="fa-solid fa-fire-flame-curved"></i>Water
-                Heater</a></li>
-            <li><a href="services.html#sewer" class="drop-item"><i class="fa-solid fa-arrow-down"></i>Sewer
-                Line</a></li>
-          </ul>
-        </li>
-        <li><a href="about.html" class="nav-link active">About</a></li>
-        <li><a href="blog.html" class="nav-link">Blog</a></li>
-        <li><a href="contact.html" class="nav-link">Contact</a></li>
-      </ul>
-      <div class="nav-actions">
-        <a href="tel:+15168879687" class="nav-phone"><i class="fa-solid fa-phone"></i>516-887-9687</a>
-        <a href="contact.html" class="btn btn-amber btn-sm">Free Quote</a>
-      </div>
-      <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false"
-        aria-controls="mobileMenu"><span></span><span></span><span></span></button>
-    </div>
-  </nav>
-  <div class="mobile-menu" id="mobileMenu">
-    <a href="../index.html" class="nav-link">Home</a>
-    <a href="services.html" class="nav-link">Services</a>
-    <a href="about.html" class="nav-link active">About</a>
-    <a href="blog.html" class="nav-link">Blog</a>
-    <a href="contact.html" class="nav-link">Contact</a>
-    <div class="mobile-divider"></div>
-    <div class="mobile-cta">
-      <a href="tel:+15168879687" class="btn btn-amber btn-block"><i class="fa-solid fa-phone"></i>Call 516-887-9687</a>
-      <a href="contact.html" class="btn btn-ghost btn-block">Get Free Quote</a>
-    </div>
-  </div>
 
   <!-- PAGE HERO -->
   <section class="page-hero">
