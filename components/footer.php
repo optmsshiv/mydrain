@@ -57,7 +57,7 @@
           </div>
           <div class="footer-contact-row">
             <i class="fa-solid fa-envelope"></i>
-            <a href="mailto:info@mydraindr.com" style="color:rgba(255,255,255,.65);">info@mydraindr.com</a>
+            <a href="mailto:info@nsjrplumbingli.com" style="color:rgba(255,255,255,.65);">info@nsjrplumbingli.com</a>
           </div>
           <div class="footer-contact-row">
             <i class="fa-solid fa-map-location-dot"></i>
