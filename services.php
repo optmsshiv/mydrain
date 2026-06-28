@@ -215,11 +215,9 @@
       <p class="text-slate-500">Real results from our hydro jetting and pipe cleaning services.</p>
     </div>
     <div class="max-w-3xl mx-auto before-after-slider h-[420px]" id="sliderContainer">
-      <div class="absolute inset-0 img-placeholder" style="background-image:url('assets/images/after.png'); background-size:cover; background-position:center;">
-        <span><i class="fa-solid fa-image text-2xl block mb-2"></i>AFTER photo</span>
+      <div class="absolute inset-0 img-placeholder" style="background-image:url('assets/images/after.png'); background-size:cover; background-position:center;">      
       </div>
       <div class="absolute inset-0 img-placeholder" id="beforeImage" style="background-image:url('assets/images/before.png'); background-size:cover; background-position:center;">
-        <span><i class="fa-solid fa-image text-2xl block mb-2"></i>BEFORE photo</span>
       </div>
       <div class="slider-divider" id="sliderControl" style="left:50%;">
         <div class="slider-handle"><i class="fa-solid fa-left-right"></i></div>
