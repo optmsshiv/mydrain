@@ -49,7 +49,7 @@
 
 <!-- HERO -->
 <section class="relative overflow-hidden" style="padding-top:120px;padding-bottom:64px;">
-  <div class="absolute inset-0 z-0 img-placeholder" data-replace="Hero photo — technician team / service van">
+  <div class="absolute inset-0 z-0 img-placeholder" style="background-image:url('assets/images/hero.png'); background-size:cover; background-position:center;">
     <span><i class="fa-solid fa-image text-2xl block mb-2"></i>Replace with hero photo<br>(technicians / service van)</span>
   </div>
   <div class="absolute inset-0 z-[1]" style="background:linear-gradient(90deg, #F8F9FA 0%, rgba(248,249,250,0.85) 45%, rgba(248,249,250,0.1) 100%);"></div>
@@ -87,9 +87,9 @@
 
   <!-- Service 1: Sewer Line Repair -->
   <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-10 items-center mt-16">
-    <div class="img-placeholder rounded-2xl shadow-xl aspect-[3/2] order-2 md:order-1" data-replace="Sewer line repair photo">
-      <span><i class="fa-solid fa-image text-2xl block mb-2"></i>Sewer Line Repair photo</span>
-    </div>
+    <img src="assets/images/hero.png" 
+     alt="Sewer line repair technician at work" 
+     class="rounded-2xl shadow-xl aspect-[3/2] object-cover w-full">
     <div class="space-y-4 order-1 md:order-2">
       <span class="text-secondary font-semibold uppercase tracking-widest text-xs">Repair Services</span>
       <h3 class="text-2xl font-bold text-primary">Sewer Line Repair</h3>
@@ -117,17 +117,17 @@
         </ul>
         <a href="book.php" class="inline-block bg-primary text-white font-semibold px-5 py-2.5 rounded-lg hover:opacity-90 transition-all">Schedule Hydro Jetting</a>
       </div>
-      <div class="img-placeholder rounded-2xl shadow-xl aspect-[3/2]" data-replace="Hydro jetting photo">
-        <span><i class="fa-solid fa-image text-2xl block mb-2"></i>Hydro Jetting photo</span>
-      </div>
+      <img src="assets/images/hydro-jetting.png" 
+     alt="Sewer line repair technician at work" 
+     class="rounded-2xl shadow-xl aspect-[3/2] object-cover w-full">
     </div>
   </div>
 
   <!-- Service 3: Sewer Camera Inspection -->
   <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-10 items-center mt-16">
-    <div class="img-placeholder rounded-2xl shadow-xl aspect-[3/2] order-2 md:order-1" data-replace="Camera inspection photo">
-      <span><i class="fa-solid fa-image text-2xl block mb-2"></i>Camera Inspection photo</span>
-    </div>
+    <img src="assets/images/sewer_camera_inspection.png" 
+     alt="Sewer line repair technician at work" 
+     class="rounded-2xl shadow-xl aspect-[3/2] object-cover w-full">
     <div class="space-y-4 order-1 md:order-2">
       <span class="text-secondary font-semibold uppercase tracking-widest text-xs">Diagnostics</span>
       <h3 class="text-2xl font-bold text-primary">Sewer Camera Inspection</h3>
@@ -164,25 +164,25 @@
   <!-- Service 5-7: small grid -->
   <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-3 gap-6 mt-16">
     <div class="bg-white border border-slate-200 p-5 rounded-2xl space-y-3 shadow-sm">
-      <div class="img-placeholder w-full h-40 rounded-xl mb-2" data-replace="Drain cleaning photo">
-        <span class="text-xs"><i class="fa-solid fa-image block mb-1"></i>Drain Cleaning photo</span>
-      </div>
+      <img src="assets/images/drain_cleaning.png" 
+     alt="Sewer line repair technician at work" 
+     class="rounded-2xl shadow-xl aspect-[3/2] object-cover w-full">
       <h4 class="text-lg font-bold text-primary">Drain Cleaning</h4>
       <p class="text-sm text-slate-500">Quick relief for stubborn sinks and slow tubs.</p>
       <a href="book.php" class="text-secondary font-semibold text-sm hover:underline">Book Drain Cleaning →</a>
     </div>
     <div class="bg-white border border-slate-200 p-5 rounded-2xl space-y-3 shadow-sm">
-      <div class="img-placeholder w-full h-40 rounded-xl mb-2" data-replace="Pipe repair photo">
-        <span class="text-xs"><i class="fa-solid fa-image block mb-1"></i>Pipe Repair photo</span>
-      </div>
+      <img src="assets/images/pipe_repair.png" 
+     alt="Sewer line repair technician at work" 
+     class="rounded-2xl shadow-xl aspect-[3/2] object-cover w-full">
       <h4 class="text-lg font-bold text-primary">Pipe Repair</h4>
       <p class="text-sm text-slate-500">Expert replacement and repair for all pipe types.</p>
       <a href="book.php" class="text-secondary font-semibold text-sm hover:underline">Request Repair →</a>
     </div>
     <div class="bg-white border border-slate-200 p-5 rounded-2xl space-y-3 shadow-sm">
-      <div class="img-placeholder w-full h-40 rounded-xl mb-2" data-replace="Leak detection photo">
-        <span class="text-xs"><i class="fa-solid fa-image block mb-1"></i>Leak Detection photo</span>
-      </div>
+      <img src="assets/images/leak_detection.png" 
+     alt="Sewer line repair technician at work" 
+     class="rounded-2xl shadow-xl aspect-[3/2] object-cover w-full">
       <h4 class="text-lg font-bold text-primary">Leak Detection</h4>
       <p class="text-sm text-slate-500">Electronic precision to find hidden water leaks.</p>
       <a href="book.php" class="text-secondary font-semibold text-sm hover:underline">Schedule Detection →</a>
