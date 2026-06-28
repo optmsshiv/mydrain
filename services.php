@@ -155,9 +155,9 @@
         </ul>
         <a href="book.php" class="inline-block bg-primary text-white font-semibold px-5 py-2.5 rounded-lg hover:opacity-90 transition-all">Get Root Removal Service</a>
       </div>
-      <div class="img-placeholder rounded-2xl shadow-xl aspect-[3/2]" data-replace="Root removal photo">
-        <span><i class="fa-solid fa-image text-2xl block mb-2"></i>Root Removal photo</span>
-      </div>
+      <img src="assets/images/root.png" 
+     alt="Sewer line repair technician at work" 
+     class="rounded-2xl shadow-xl aspect-[3/2] object-cover w-full">
     </div>
   </div>
 
@@ -200,9 +200,9 @@
           <i class="fa-solid fa-phone"></i> Call Emergency Team
         </a>
       </div>
-      <div class="img-placeholder rounded-2xl aspect-[3/2]" style="border-color:rgba(255,255,255,0.25);color:rgba(255,255,255,0.6);background:rgba(255,255,255,0.05);" data-replace="Emergency response truck photo">
-        <span><i class="fa-solid fa-image text-2xl block mb-2"></i>Emergency response photo</span>
-      </div>
+      <img src="assets/images/emergency.png" 
+     alt="Sewer line repair technician at work" 
+     class="rounded-2xl shadow-xl aspect-[3/2] object-cover w-full">
     </div>
   </div>
 </section>
@@ -215,10 +215,10 @@
       <p class="text-slate-500">Real results from our hydro jetting and pipe cleaning services.</p>
     </div>
     <div class="max-w-3xl mx-auto before-after-slider h-[420px]" id="sliderContainer">
-      <div class="absolute inset-0 img-placeholder" style="border:none;background:#1f2733;color:#94a3b8;" data-replace="AFTER photo">
+      <div class="absolute inset-0 img-placeholder" style="background-image:url('assets/images/after.png'); background-size:cover; background-position:center;">
         <span><i class="fa-solid fa-image text-2xl block mb-2"></i>AFTER photo</span>
       </div>
-      <div class="absolute inset-0 img-placeholder" id="beforeImage" style="border:none;width:50%;background:#3a3a3a;color:#cbd5e1;" data-replace="BEFORE photo">
+      <div class="absolute inset-0 img-placeholder" id="beforeImage" style="background-image:url('assets/images/before.png'); background-size:cover; background-position:center;">
         <span><i class="fa-solid fa-image text-2xl block mb-2"></i>BEFORE photo</span>
       </div>
       <div class="slider-divider" id="sliderControl" style="left:50%;">
