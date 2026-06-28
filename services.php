@@ -117,7 +117,7 @@
         </ul>
         <a href="book.php" class="inline-block bg-primary text-white font-semibold px-5 py-2.5 rounded-lg hover:opacity-90 transition-all">Schedule Hydro Jetting</a>
       </div>
-      <img src="assets/images/hydro-jetting.png" 
+      <img src="assets/images/hydro_jetting.png" 
      alt="Sewer line repair technician at work" 
      class="rounded-2xl shadow-xl aspect-[3/2] object-cover w-full">
     </div>
