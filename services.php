@@ -17,7 +17,13 @@
           sky: '#CFE3EC',
           sage: '#D9E5D6',
           lavender: '#D8DEEF',
-          rose: '#F0DCE0'
+          rose: '#F0DCE0',
+          vorange: '#F97316',
+          vgreen: '#16A34A',
+          vred: '#E11D48',
+          vblue: '#0EA5E9',
+          vviolet: '#8B5CF6',
+          vteal: '#0D9488'
         },
         fontFamily: {
           sans: ['Montserrat', 'sans-serif']
@@ -108,8 +114,8 @@
       <h1 class="text-4xl md:text-5xl font-extrabold text-primary mb-5 leading-tight">Professional Sewer, Drain &amp; Plumbing Services</h1>
       <p class="text-base text-slate-600 mb-7 leading-relaxed">Precision plumbing solutions for Nassau County homeowners. From emergency root removal to complete pipe replacement, we combine advanced technology with master craftsmanship.</p>
       <div class="flex flex-wrap gap-3 mb-8">
-        <a href="book.php" class="bg-peach text-[#7a4a22] font-semibold px-6 py-3 rounded-xl shadow hover:-translate-y-0.5 transition-all">Book Service Now</a>
-        <a href="tel:+15164029213" class="bg-sky text-[#2c4b56] font-semibold px-6 py-3 rounded-xl shadow hover:-translate-y-0.5 transition-all flex items-center gap-2">
+        <a href="book.php" class="bg-vorange text-white font-semibold px-6 py-3 rounded-xl shadow hover:-translate-y-0.5 transition-all">Book Service Now</a>
+        <a href="tel:+15164029213" class="bg-vgreen text-white font-semibold px-6 py-3 rounded-xl shadow hover:-translate-y-0.5 transition-all flex items-center gap-2">
           <i class="fa-solid fa-phone"></i> Call Now
         </a>
       </div>
@@ -144,7 +150,7 @@
         <li class="flex items-center gap-2 text-slate-700"><i class="fa-solid fa-check text-emerald-600/80"></i> Advanced excavation technology</li>
         <li class="flex items-center gap-2 text-slate-700"><i class="fa-solid fa-check text-emerald-600/80"></i> Long-term structural integrity</li>
       </ul>
-      <a href="book.php" class="inline-block bg-peach text-[#7a4a22] font-semibold px-5 py-2.5 rounded-lg hover:opacity-90 transition-all">Request Service</a>
+      <a href="book.php" class="inline-block bg-vorange text-white font-semibold px-5 py-2.5 rounded-lg hover:opacity-90 transition-all">Request Service</a>
     </div>
   </div>
 
@@ -160,7 +166,7 @@
           <li class="flex items-center gap-2 text-slate-700"><i class="fa-solid fa-check text-emerald-600/80"></i> Chemical-free process</li>
           <li class="flex items-center gap-2 text-slate-700"><i class="fa-solid fa-check text-emerald-600/80"></i> Effective for all pipe diameters</li>
         </ul>
-        <a href="book.php" class="inline-block bg-primary text-white font-semibold px-5 py-2.5 rounded-lg hover:opacity-90 transition-all">Schedule Hydro Jetting</a>
+        <a href="book.php" class="inline-block bg-vblue text-white font-semibold px-5 py-2.5 rounded-lg hover:opacity-90 transition-all">Schedule Hydro Jetting</a>
       </div>
       <img src="assets/images/hydro_jetting.png" 
      alt="Sewer line repair technician at work" 
@@ -182,7 +188,7 @@
         <li class="flex items-center gap-2 text-slate-700"><i class="fa-solid fa-check text-emerald-600/80"></i> Precision location tracking</li>
         <li class="flex items-center gap-2 text-slate-700"><i class="fa-solid fa-check text-emerald-600/80"></i> Comprehensive inspection reports</li>
       </ul>
-      <a href="book.php" class="inline-block bg-peach text-[#7a4a22] font-semibold px-5 py-2.5 rounded-lg hover:opacity-90 transition-all">Book Inspection</a>
+      <a href="book.php" class="inline-block bg-vviolet text-white font-semibold px-5 py-2.5 rounded-lg hover:opacity-90 transition-all">Book Inspection</a>
     </div>
   </div>
 
@@ -198,7 +204,7 @@
           <li class="flex items-center gap-2 text-slate-700"><i class="fa-solid fa-check text-emerald-600/80"></i> Root-inhibiting treatments</li>
           <li class="flex items-center gap-2 text-slate-700"><i class="fa-solid fa-check text-emerald-600/80"></i> Preventive maintenance plans</li>
         </ul>
-        <a href="book.php" class="inline-block bg-primary text-white font-semibold px-5 py-2.5 rounded-lg hover:opacity-90 transition-all">Get Root Removal Service</a>
+        <a href="book.php" class="inline-block bg-vteal text-white font-semibold px-5 py-2.5 rounded-lg hover:opacity-90 transition-all">Get Root Removal Service</a>
       </div>
       <img src="assets/images/root.png" 
      alt="Sewer line repair technician at work" 
@@ -214,7 +220,7 @@
      class="rounded-2xl shadow-xl aspect-[3/2] object-cover w-full">
       <h4 class="text-lg font-bold text-primary">Drain Cleaning</h4>
       <p class="text-sm text-slate-500">Quick relief for stubborn sinks and slow tubs.</p>
-      <a href="book.php" class="text-secondary font-semibold text-sm hover:underline">Book Drain Cleaning →</a>
+      <a href="book.php" class="text-vorange font-semibold text-sm hover:underline">Book Drain Cleaning →</a>
     </div>
     <div class="bg-white border border-slate-200 p-5 rounded-2xl space-y-3 shadow-sm">
       <img src="assets/images/pipe_repair.png" 
@@ -222,7 +228,7 @@
      class="rounded-2xl shadow-xl aspect-[3/2] object-cover w-full">
       <h4 class="text-lg font-bold text-primary">Pipe Repair</h4>
       <p class="text-sm text-slate-500">Expert replacement and repair for all pipe types.</p>
-      <a href="book.php" class="text-secondary font-semibold text-sm hover:underline">Request Repair →</a>
+      <a href="book.php" class="text-vblue font-semibold text-sm hover:underline">Request Repair →</a>
     </div>
     <div class="bg-white border border-slate-200 p-5 rounded-2xl space-y-3 shadow-sm">
       <img src="assets/images/leak_detection.png" 
@@ -230,7 +236,7 @@
      class="rounded-2xl shadow-xl aspect-[3/2] object-cover w-full">
       <h4 class="text-lg font-bold text-primary">Leak Detection</h4>
       <p class="text-sm text-slate-500">Electronic precision to find hidden water leaks.</p>
-      <a href="book.php" class="text-secondary font-semibold text-sm hover:underline">Schedule Detection →</a>
+      <a href="book.php" class="text-vviolet font-semibold text-sm hover:underline">Schedule Detection →</a>
     </div>
   </div>
 
@@ -238,10 +244,10 @@
   <div class="bg-primary text-white py-16 mt-16 reveal">
     <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-10 items-center">
       <div class="space-y-4">
-        <div class="inline-block bg-rose text-[#7a3340] px-3 py-1 rounded text-xs font-bold tracking-wide">URGENT</div>
+        <div class="inline-block bg-vred text-white px-3 py-1 rounded text-xs font-bold tracking-wide">URGENT</div>
         <h3 class="text-2xl font-bold text-white">24/7 Emergency Plumbing</h3>
         <p class="text-slate-300">Burst pipes and major sewage backups don't wait for business hours. Our rapid response team is ready across Nassau County for immediate dispatch.</p>
-        <a class="inline-flex items-center gap-2 bg-peach text-[#7a4a22] px-6 py-3 rounded-xl font-bold hover:scale-105 transition-transform" href="tel:+15164029213">
+        <a class="inline-flex items-center gap-2 bg-vred text-white px-6 py-3 rounded-xl font-bold hover:scale-105 transition-transform" href="tel:+15164029213">
           <i class="fa-solid fa-phone"></i> Call Emergency Team
         </a>
       </div>
@@ -423,7 +429,7 @@
       <h2 class="text-2xl md:text-3xl font-bold mb-1">Plumbing Emergency in Nassau?</h2>
       <p class="text-slate-300">Our experts are standing by. Get a technician at your door today.</p>
     </div>
-    <a class="bg-peach text-[#7a4a22] font-bold px-8 py-4 rounded-xl hover:shadow-lg transition-all" href="tel:+15164029213">
+    <a class="bg-vgreen text-white font-bold px-8 py-4 rounded-xl hover:shadow-lg transition-all" href="tel:+15164029213">
       Call +1 516-402-9213
     </a>
   </div>
