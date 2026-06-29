@@ -36,13 +36,6 @@
         <a href="services.php">Pipe Repair</a>
         <a href="services.php">Leak Detection</a>
         <a href="services.php">Emergency Plumbing</a>
-
-        <h5 style="margin-top:22px;">Service Areas</h5>
-        <a>Franklin Square</a>
-        <a>Elmont</a>
-        <a>Valley Stream</a>
-        <a>Floral Park</a>
-        <a>New Hyde Park</a>
       </div>
 
       <div class="footer-col">

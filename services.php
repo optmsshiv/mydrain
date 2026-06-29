@@ -101,7 +101,6 @@
 <!-- HERO -->
 <section class="relative overflow-hidden" style="padding-top:120px;padding-bottom:64px;">
   <div class="absolute inset-0 z-0 img-placeholder" style="background-image:url('assets/images/hero.png'); background-size:cover; background-position:center;">
-    <span><i class="fa-solid fa-image text-2xl block mb-2"></i>Replace with hero photo<br>(technicians / service van)</span>
   </div>
   <div class="absolute inset-0 z-[1]" style="background:linear-gradient(90deg, #F8F9FA 0%, rgba(248,249,250,0.85) 45%, rgba(248,249,250,0.1) 100%);"></div>
 
@@ -422,7 +421,7 @@
   </div>
 </section>
 
-<!-- FINAL EMERGENCY CTA -->
+<!-- FINAL EMERGENCY CTA 
 <section class="bg-primary text-white py-12">
   <div class="max-w-6xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-8">
     <div class="text-center md:text-left">
@@ -433,7 +432,7 @@
       Call +1 516-402-9213
     </a>
   </div>
-</section>
+</section> -->
 
 <?php include 'includes/footer.php'; ?>
 
