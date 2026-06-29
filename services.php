@@ -41,6 +41,51 @@
     position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:40px;height:40px;background:#fff;
     border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 6px rgba(0,0,0,.2);z-index:11;color:#334155;
   }
+
+  /* ===== Static map card ===== */
+  .map-card{
+    background-image:
+      linear-gradient(rgba(207,227,236,0.55), rgba(207,227,236,0.55)),
+      repeating-linear-gradient(0deg, transparent 0 38px, rgba(51,65,85,0.06) 38px 40px),
+      repeating-linear-gradient(90deg, transparent 0 38px, rgba(51,65,85,0.06) 38px 40px);
+    transition:transform .4s ease, box-shadow .4s ease;
+  }
+  .map-card:hover{transform:translateY(-6px) scale(1.01);box-shadow:0 25px 40px -10px rgba(51,65,85,0.25);}
+  .map-card .road{position:absolute;background:rgba(51,65,85,0.18);}
+  .map-card .road.h1{top:32%;left:0;right:0;height:6px;}
+  .map-card .road.h2{top:68%;left:0;right:0;height:4px;}
+  .map-card .road.v1{left:28%;top:0;bottom:0;width:6px;}
+  .map-card .road.v2{left:72%;top:0;bottom:0;width:4px;}
+
+  .map-pin-wrap{position:relative;display:flex;align-items:center;justify-content:center;}
+  .map-pin-radar{
+    position:absolute;width:70px;height:70px;border-radius:50%;
+    background:rgba(51,65,85,0.18);
+    animation:radarPulse 2.4s ease-out infinite;
+  }
+  .map-pin-radar.delay{animation-delay:1.2s;}
+  @keyframes radarPulse{
+    0%{transform:scale(0.3);opacity:0.7;}
+    100%{transform:scale(2.2);opacity:0;}
+  }
+  .map-pin{
+    position:relative;z-index:2;
+    animation:pinBounce 2.4s ease-in-out infinite;
+    filter:drop-shadow(0 6px 6px rgba(51,65,85,0.35));
+  }
+  @keyframes pinBounce{
+    0%, 100%{transform:translateY(0);}
+    50%{transform:translateY(-10px);}
+  }
+  .map-card:hover .map-pin{animation-duration:0.9s;}
+  .map-dot{
+    position:absolute;width:9px;height:9px;border-radius:50%;background:#334155;
+    box-shadow:0 0 0 4px rgba(255,255,255,0.7);
+  }
+
+  /* ===== Scroll reveal ===== */
+  .reveal{opacity:0;transform:translateY(28px);transition:opacity .7s ease, transform .7s ease;}
+  .reveal.is-visible{opacity:1;transform:translateY(0);}
 </style>
 </head>
 <body class="svc-page">
@@ -86,7 +131,7 @@
   </div>
 
   <!-- Service 1: Sewer Line Repair -->
-  <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-10 items-center mt-16">
+  <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-10 items-center mt-16 reveal">
     <img src="assets/images/hero.png" 
      alt="Sewer line repair technician at work" 
      class="rounded-2xl shadow-xl aspect-[3/2] object-cover w-full">
@@ -104,7 +149,7 @@
   </div>
 
   <!-- Service 2: Hydro Jetting -->
-  <div class="bg-neutral py-16 mt-16">
+  <div class="bg-neutral py-16 mt-16 reveal">
     <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-10 items-center">
       <div class="space-y-4">
         <span class="text-secondary font-semibold uppercase tracking-widest text-xs">Maintenance</span>
@@ -124,7 +169,7 @@
   </div>
 
   <!-- Service 3: Sewer Camera Inspection -->
-  <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-10 items-center mt-16">
+  <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-10 items-center mt-16 reveal">
     <img src="assets/images/sewer_camera_inspection.png" 
      alt="Sewer line repair technician at work" 
      class="rounded-2xl shadow-xl aspect-[3/2] object-cover w-full">
@@ -142,7 +187,7 @@
   </div>
 
   <!-- Service 4: Root Removal -->
-  <div class="bg-neutral py-16 mt-16">
+  <div class="bg-neutral py-16 mt-16 reveal">
     <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-10 items-center">
       <div class="space-y-4">
         <span class="text-secondary font-semibold uppercase tracking-widest text-xs">Specialized</span>
@@ -162,7 +207,7 @@
   </div>
 
   <!-- Service 5-7: small grid -->
-  <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-3 gap-6 mt-16">
+  <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-3 gap-6 mt-16 reveal">
     <div class="bg-white border border-slate-200 p-5 rounded-2xl space-y-3 shadow-sm">
       <img src="assets/images/drain_cleaning.png" 
      alt="Sewer line repair technician at work" 
@@ -190,7 +235,7 @@
   </div>
 
   <!-- Emergency Plumbing -->
-  <div class="bg-primary text-white py-16 mt-16">
+  <div class="bg-primary text-white py-16 mt-16 reveal">
     <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-10 items-center">
       <div class="space-y-4">
         <div class="inline-block bg-rose text-[#7a3340] px-3 py-1 rounded text-xs font-bold tracking-wide">URGENT</div>
@@ -214,7 +259,7 @@
       <h2 class="text-3xl font-extrabold text-primary mb-2">See The Difference</h2>
       <p class="text-slate-500">Real results from our hydro jetting and pipe cleaning services.</p>
     </div>
-    <div class="max-w-3xl mx-auto before-after-slider h-[420px]" id="sliderContainer">
+    <div class="max-w-3xl mx-auto before-after-slider h-[420px] reveal" id="sliderContainer">
       <div class="absolute inset-0 img-placeholder" style="background-image:url('assets/images/after.png'); background-size:cover; background-position:center;">      
       </div>
       <div class="absolute inset-0 img-placeholder" id="beforeImage" style="background-image:url('assets/images/before.png'); background-size:cover; background-position:center;">
@@ -234,7 +279,7 @@
     <div class="text-center mb-10">
       <h2 class="text-3xl font-extrabold text-primary">Why Homeowners Trust Trailblazer</h2>
     </div>
-    <div class="grid md:grid-cols-4 gap-6">
+    <div class="grid md:grid-cols-4 gap-6 reveal">
       <div class="bg-white p-7 rounded-2xl text-center space-y-3 shadow-sm">
         <div class="w-16 h-16 bg-sky rounded-full flex items-center justify-center mx-auto"><i class="fa-solid fa-tools text-primary text-2xl"></i></div>
         <h4 class="text-lg font-bold text-primary">Advanced Equipment</h4>
@@ -309,19 +354,33 @@
 <!-- SERVICE AREAS + FAQ -->
 <section class="py-16 bg-neutral">
   <div class="max-w-6xl mx-auto px-6 grid lg:grid-cols-2 gap-12">
-    <div class="space-y-6">
+    <div class="space-y-6 reveal">
       <h2 class="text-3xl font-extrabold text-primary">Serving All of Nassau County</h2>
-      <div class="relative w-full aspect-square bg-sky rounded-3xl overflow-hidden border-4 border-white shadow-xl flex items-center justify-center">
-        <div class="text-center space-y-3">
-          <i class="fa-solid fa-location-dot text-primary text-5xl"></i>
-          <p class="font-bold text-primary">Nassau County Service Hub</p>
+      <div class="relative w-full aspect-square map-card rounded-3xl overflow-hidden border-4 border-white shadow-xl">
+        <div class="road h1"></div>
+        <div class="road h2"></div>
+        <div class="road v1"></div>
+        <div class="road v2"></div>
+
+        <div class="map-dot" style="top:22%;left:35%;"></div>
+        <div class="map-dot" style="top:40%;left:62%;"></div>
+        <div class="map-dot" style="top:60%;left:30%;"></div>
+        <div class="map-dot" style="top:74%;left:68%;"></div>
+
+        <div class="absolute inset-0 flex items-center justify-center">
+          <div class="map-pin-wrap">
+            <div class="map-pin-radar"></div>
+            <div class="map-pin-radar delay"></div>
+            <i class="fa-solid fa-location-dot map-pin text-primary text-5xl"></i>
+          </div>
         </div>
+
         <div class="absolute bottom-4 left-4 right-4 bg-white/90 backdrop-blur-md p-3 rounded-xl">
           <p class="text-xs text-slate-600">Franklin Square • Elmont • Valley Stream • Floral Park • New Hyde Park • Queens Village</p>
         </div>
       </div>
     </div>
-    <div class="space-y-6">
+    <div class="space-y-6 reveal">
       <h2 class="text-3xl font-extrabold text-primary text-center lg:text-left">Frequently Asked Questions</h2>
       <div class="space-y-4">
         <details class="group bg-white rounded-xl shadow-sm overflow-hidden" open>
@@ -393,6 +452,18 @@
     container.addEventListener('mousemove', moveSlider);
     container.addEventListener('touchmove', moveSlider);
   }
+
+  // Scroll reveal animation
+  const revealEls = document.querySelectorAll('.reveal');
+  const revealObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('is-visible');
+        revealObserver.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.15 });
+  revealEls.forEach(el => revealObserver.observe(el));
 </script>
 </body>
 </html>

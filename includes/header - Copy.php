@@ -5,16 +5,6 @@ function navClass($page, $current) {
     return $page === $current ? 'active' : '';
 }
 ?>
-<div class="top-bar" id="topBar">
-  <div class="top-bar-inner">
-    <span class="top-bar-msg"><i class="fa-solid fa-truck-fast"></i> Plumbing Emergency in Nassau? Our team is standing by — on-site in as little as one hour.</span>
-    <div class="top-bar-actions">
-      <a href="tel:+15164029213" class="top-bar-call"><i class="fa-solid fa-phone"></i> (516) 402-9213</a>
-      <a href="book.php" class="top-bar-book">Call Emergency Team</a>
-    </div>
-    <button class="top-bar-close" id="topBarClose" aria-label="Dismiss">&times;</button>
-  </div>
-</div>
 <header>
   <div class="nav">
     <a href="index.php" class="logo"><div class="logo-mark"><i class="fa-solid fa-wrench"></i></div>Trailblazer Plumbing</a>
