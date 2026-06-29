@@ -99,7 +99,7 @@
 <?php include 'includes/header.php'; ?>
 
 <!-- HERO -->
-<section class="relative overflow-hidden" style="padding-top:120px;padding-bottom:64px;">
+<section class="relative overflow-hidden pt-28 pb-10 md:pt-32 md:pb-16">
   <div class="absolute inset-0 z-0 img-placeholder" style="background-image:url('assets/images/hero.png'); background-size:cover; background-position:center;">
   </div>
   <div class="absolute inset-0 z-[1]" style="background:linear-gradient(90deg, #F8F9FA 0%, rgba(248,249,250,0.85) 45%, rgba(248,249,250,0.1) 100%);"></div>
@@ -110,7 +110,7 @@
         <i class="fa-solid fa-circle-check text-primary text-sm"></i>
         <span class="text-sm font-semibold text-primary">Nassau County's Premier Sewer Experts</span>
       </div>
-      <h1 class="text-4xl md:text-5xl font-extrabold text-primary mb-5 leading-tight">Professional Sewer, Drain &amp; Plumbing Services</h1>
+      <h1 class="text-3xl sm:text-4xl md:text-5xl font-extrabold text-primary mb-5 leading-tight">Professional Sewer, Drain &amp; Plumbing Services</h1>
       <p class="text-base text-slate-600 mb-7 leading-relaxed">Precision plumbing solutions for Nassau County homeowners. From emergency root removal to complete pipe replacement, we combine advanced technology with master craftsmanship.</p>
       <div class="flex flex-wrap gap-3 mb-8">
         <a href="book.php" class="bg-vorange text-white font-semibold px-6 py-3 rounded-xl shadow hover:-translate-y-0.5 transition-all">Book Service Now</a>
@@ -264,7 +264,7 @@
       <h2 class="text-3xl font-extrabold text-primary mb-2">See The Difference</h2>
       <p class="text-slate-500">Real results from our hydro jetting and pipe cleaning services.</p>
     </div>
-    <div class="max-w-3xl mx-auto before-after-slider h-[420px] reveal" id="sliderContainer">
+    <div class="max-w-3xl mx-auto before-after-slider h-[260px] sm:h-[340px] md:h-[420px] reveal" id="sliderContainer">
       <div class="absolute inset-0 img-placeholder" style="background-image:url('assets/images/after.png'); background-size:cover; background-position:center;">      
       </div>
       <div class="absolute inset-0 img-placeholder" id="beforeImage" style="background-image:url('assets/images/before.png'); background-size:cover; background-position:center;">
