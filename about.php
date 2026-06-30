@@ -100,9 +100,9 @@
 <!-- ABOUT INTRO -->
 <section class="py-16 bg-white">
   <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
-    <div class="img-placeholder rounded-2xl shadow-xl aspect-[4/3] reveal" data-replace="Owner / team founding photo">
-      <span><i class="fa-solid fa-image text-2xl block mb-2"></i>Replace with team or owner photo</span>
-    </div>
+    <img src="assets/images/check_tech.png" 
+     alt="Sewer line repair technician at work" 
+     class="rounded-2xl shadow-xl aspect-[3/2] object-cover w-full">
     <div class="reveal">
       <span class="text-secondary font-semibold uppercase tracking-widest text-xs">About Us</span>
       <h2 class="text-3xl font-extrabold text-primary mt-2 mb-5">A Local Team Nassau County Trusts</h2>
@@ -173,23 +173,23 @@
 
     <div class="grid md:grid-cols-3 gap-6">
       <div class="reveal">
-        <div class="img-placeholder rounded-2xl shadow-md aspect-[4/3]" data-replace="Technician portrait or at-work photo">
-          <span><i class="fa-solid fa-image text-2xl block mb-2"></i>Technician photo</span>
-        </div>
+        <img src="assets/images/work.png" 
+     alt="Sewer line repair technician at work" 
+     class="rounded-2xl shadow-xl aspect-[3/2] object-cover w-full">
         <h4 class="font-bold text-primary mt-4">Experienced Technicians</h4>
         <p class="text-sm text-slate-500 mt-1">Trained on the latest diagnostic and repair equipment.</p>
       </div>
       <div class="reveal">
-        <div class="img-placeholder rounded-2xl shadow-md aspect-[4/3]" data-replace="Branded service van photo">
-          <span><i class="fa-solid fa-image text-2xl block mb-2"></i>Branded van photo</span>
-        </div>
+        <img src="assets/images/service_vehicle.png" 
+     alt="Sewer line repair technician at work" 
+     class="rounded-2xl shadow-xl aspect-[3/2] object-cover w-full">
         <h4 class="font-bold text-primary mt-4">Fully Equipped Fleet</h4>
         <p class="text-sm text-slate-500 mt-1">Stocked and ready to dispatch across Nassau County.</p>
       </div>
       <div class="reveal">
-        <div class="img-placeholder rounded-2xl shadow-md aspect-[4/3]" data-replace="Completed job site photo">
-          <span><i class="fa-solid fa-image text-2xl block mb-2"></i>Completed job photo</span>
-        </div>
+        <img src="assets/images/result.png" 
+     alt="Completed sewer line repair" 
+     class="rounded-2xl shadow-xl aspect-[3/2] object-cover w-full">
         <h4 class="font-bold text-primary mt-4">Proven Results</h4>
         <p class="text-sm text-slate-500 mt-1">See real work on our <a href="services.php" class="text-vorange font-semibold hover:underline">Services page</a>.</p>
       </div>
