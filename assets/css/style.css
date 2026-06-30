@@ -30,9 +30,11 @@ html {
   scroll-behavior: smooth;
 }
 
-html,
-body {
+html {
   overflow-x: hidden;
+}
+
+body {
   width: 100%;
   max-width: 100%;
 }
