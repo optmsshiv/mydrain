@@ -41,24 +41,19 @@
   .about-page .reveal{opacity:0;transform:translateY(28px);transition:opacity .7s ease, transform .7s ease;}
   .about-page .reveal.is-visible{opacity:1;transform:translateY(0);}
 
-  /* Animated map card (same as Home / Services) */
+  /* Animated map card (realistic coastal map style) */
   .about-page .map-card{
-    background-image:
-      linear-gradient(rgba(207,227,236,0.55), rgba(207,227,236,0.55)),
-      repeating-linear-gradient(0deg, transparent 0 38px, rgba(51,65,85,0.06) 38px 40px),
-      repeating-linear-gradient(90deg, transparent 0 38px, rgba(51,65,85,0.06) 38px 40px);
+    position:relative;
+    background:
+      radial-gradient(ellipse 140% 120% at 75% 15%, #2f6fa3 0%, #3a82bb 35%, #4a93c9 60%, #5fa3d2 100%);
     transition:transform .4s ease, box-shadow .4s ease;
   }
   .about-page .map-card:hover{transform:translateY(-6px) scale(1.01);box-shadow:0 25px 40px -10px rgba(51,65,85,0.25);}
-  .about-page .map-card .road{position:absolute;background:rgba(51,65,85,0.18);}
-  .about-page .map-card .road.h1{top:32%;left:0;right:0;height:6px;}
-  .about-page .map-card .road.h2{top:68%;left:0;right:0;height:4px;}
-  .about-page .map-card .road.v1{left:28%;top:0;bottom:0;width:6px;}
-  .about-page .map-card .road.v2{left:72%;top:0;bottom:0;width:4px;}
+  .about-page .map-card .map-svg{position:absolute;inset:0;width:100%;height:100%;}
   .about-page .map-pin-wrap{position:relative;display:flex;align-items:center;justify-content:center;}
   .about-page .map-pin-radar{
     position:absolute;width:70px;height:70px;border-radius:50%;
-    background:rgba(51,65,85,0.18);
+    background:rgba(255,255,255,0.35);
     animation:radarPulse 2.4s ease-out infinite;
   }
   .about-page .map-pin-radar.delay{animation-delay:1.2s;}
@@ -69,7 +64,7 @@
   .about-page .map-pin{
     position:relative;z-index:2;
     animation:pinBounce 2.4s ease-in-out infinite;
-    filter:drop-shadow(0 6px 6px rgba(51,65,85,0.35));
+    filter:drop-shadow(0 6px 6px rgba(0,0,0,0.45));
   }
   @keyframes pinBounce{
     0%, 100%{transform:translateY(0);}
@@ -77,8 +72,9 @@
   }
   .about-page .map-card:hover .map-pin{animation-duration:0.9s;}
   .about-page .map-dot{
-    position:absolute;width:9px;height:9px;border-radius:50%;background:#334155;
-    box-shadow:0 0 0 4px rgba(255,255,255,0.7);
+    position:absolute;width:9px;height:9px;border-radius:50%;background:#fff;
+    box-shadow:0 0 0 4px rgba(255,255,255,0.4), 0 2px 4px rgba(0,0,0,0.3);
+    z-index:1;
   }
 </style>
 </head>
@@ -135,29 +131,164 @@
   </div>
 </section>
 
-<!-- OUR VALUES -->
-<section class="py-16 bg-white">
+<!-- VALUES THAT GUIDE US -->
+<section class="py-16 bg-neutral">
   <div class="max-w-3xl mx-auto px-6 text-center reveal">
-    <span class="text-secondary font-semibold uppercase tracking-widest text-xs">What We Stand For</span>
-    <h2 class="text-3xl font-extrabold text-primary mt-2 mb-4">Our Values</h2>
-    <p class="text-slate-600 leading-relaxed">Three commitments guide every job we take on, big or small.</p>
+    <h2 class="text-3xl font-extrabold text-primary mb-4">Values That Guide Us</h2>
+    <p class="text-slate-600 leading-relaxed">Our commitment to excellence is non-negotiable. Every job we perform is rooted in these four pillars.</p>
   </div>
 
-  <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-3 gap-6 mt-12 reveal">
-    <div class="bg-white border border-slate-200 p-7 rounded-2xl text-center space-y-3 shadow-sm hover:-translate-y-1 hover:shadow-md transition-all">
-      <div class="w-14 h-14 bg-vorange/10 rounded-full flex items-center justify-center mx-auto"><i class="fa-solid fa-handshake text-vorange text-xl"></i></div>
+  <div class="max-w-6xl mx-auto px-6 grid sm:grid-cols-2 md:grid-cols-4 gap-6 mt-12 reveal">
+    <div class="bg-white p-6 rounded-2xl space-y-3 shadow-sm hover:-translate-y-1 hover:shadow-md transition-all">
+      <i class="fa-solid fa-people-carry-box text-vblue text-2xl"></i>
+      <h4 class="text-lg font-bold text-primary">Quality Workmanship</h4>
+      <p class="text-sm text-slate-500">We don't cut corners. Every repair is executed with precision using premium materials built to endure.</p>
+    </div>
+    <div class="bg-white p-6 rounded-2xl space-y-3 shadow-sm hover:-translate-y-1 hover:shadow-md transition-all">
+      <i class="fa-solid fa-clipboard-check text-vblue text-2xl"></i>
       <h4 class="text-lg font-bold text-primary">Honest Service</h4>
-      <p class="text-sm text-slate-500">Clear answers and straightforward recommendations, every visit — no upselling, no surprises.</p>
+      <p class="text-sm text-slate-500">Transparent pricing and straightforward advice. If it doesn't need replacing, we won't tell you it does.</p>
     </div>
-    <div class="bg-white border border-slate-200 p-7 rounded-2xl text-center space-y-3 shadow-sm hover:-translate-y-1 hover:shadow-md transition-all">
-      <div class="w-14 h-14 bg-vblue/10 rounded-full flex items-center justify-center mx-auto"><i class="fa-solid fa-screwdriver-wrench text-vblue text-xl"></i></div>
-      <h4 class="text-lg font-bold text-primary">Reliable Workmanship</h4>
-      <p class="text-sm text-slate-500">Repairs built to last, not just a quick patch — done right the first time.</p>
+    <div class="bg-white p-6 rounded-2xl space-y-3 shadow-sm hover:-translate-y-1 hover:shadow-md transition-all">
+      <i class="fa-solid fa-bolt text-vblue text-2xl"></i>
+      <h4 class="text-lg font-bold text-primary">Fast Response</h4>
+      <p class="text-sm text-slate-500">Plumbing emergencies wait for no one. Our efficient dispatch system ensures a technician arrives swiftly.</p>
     </div>
-    <div class="bg-white border border-slate-200 p-7 rounded-2xl text-center space-y-3 shadow-sm hover:-translate-y-1 hover:shadow-md transition-all">
-      <div class="w-14 h-14 bg-vgreen/10 rounded-full flex items-center justify-center mx-auto"><i class="fa-solid fa-leaf text-vgreen text-xl"></i></div>
-      <h4 class="text-lg font-bold text-primary">Long-Term Solutions</h4>
-      <p class="text-sm text-slate-500">We fix the root cause so the problem doesn't come back to bother you again.</p>
+    <div class="bg-white p-6 rounded-2xl space-y-3 shadow-sm hover:-translate-y-1 hover:shadow-md transition-all">
+      <i class="fa-solid fa-heart text-vblue text-2xl"></i>
+      <h4 class="text-lg font-bold text-primary">Customer First</h4>
+      <p class="text-sm text-slate-500">Your satisfaction is our ultimate metric. We treat your home with the same respect we'd show our own.</p>
+    </div>
+  </div>
+</section>
+
+<!-- WHAT SETS US APART -->
+<section class="py-16 bg-white">
+  <div class="max-w-3xl mx-auto px-6 text-center reveal">
+    <span class="text-secondary font-semibold uppercase tracking-widest text-xs">The Trailblazer Difference</span>
+    <h2 class="text-3xl font-extrabold text-primary mt-2 mb-4">What Sets Us Apart</h2>
+    <p class="text-slate-600 leading-relaxed">The tools, training, and habits that separate us from the rest.</p>
+  </div>
+
+  <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-5 mt-12 reveal">
+    <div class="bg-neutral p-7 rounded-2xl space-y-2">
+      <i class="fa-solid fa-user-shield text-vblue text-2xl"></i>
+      <h4 class="text-lg font-bold text-primary">Professional Technicians</h4>
+      <p class="text-sm text-slate-500">Background-checked, drug-tested, and highly trained experts.</p>
+    </div>
+    <div class="bg-primary text-white p-7 rounded-2xl space-y-2">
+      <i class="fa-solid fa-robot text-vblue text-2xl"></i>
+      <h4 class="text-lg font-bold text-white">Modern Equipment</h4>
+      <p class="text-sm text-slate-300">We invest in the latest tools to provide faster, more accurate solutions for every plumbing challenge.</p>
+    </div>
+
+    <div class="bg-neutral p-7 rounded-2xl space-y-2">
+      <i class="fa-solid fa-video text-vblue text-2xl"></i>
+      <h4 class="text-lg font-bold text-primary">Camera Inspections</h4>
+      <p class="text-sm text-slate-500">High-definition sewer line visuals for pinpoint diagnostic accuracy.</p>
+    </div>
+    <div class="bg-neutral p-7 rounded-2xl space-y-2">
+      <i class="fa-solid fa-droplet text-vblue text-2xl"></i>
+      <h4 class="text-lg font-bold text-primary">Hydro Jetting</h4>
+      <p class="text-sm text-slate-500">Powerful, high-pressure water cleaning for the most stubborn blockages.</p>
+    </div>
+    <div class="bg-neutral p-7 rounded-2xl space-y-2">
+      <i class="fa-solid fa-broom text-vblue text-2xl"></i>
+      <h4 class="text-lg font-bold text-primary">Clean Work Practices</h4>
+      <p class="text-sm text-slate-500">Shoe covers and drop cloths used on every job to protect your floors.</p>
+    </div>
+
+    <div class="md:col-span-2 bg-vblue text-white p-7 rounded-2xl flex items-center gap-4">
+      <i class="fa-solid fa-shield-halved text-2xl flex-shrink-0"></i>
+      <div>
+        <h4 class="text-lg font-bold text-white">Long-Term Solutions</h4>
+        <p class="text-sm text-white/85">We fix the cause, not just the symptom, ensuring permanent results that save you money over time.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CORE EXPERTISE -->
+<section class="py-16 bg-neutral">
+  <div class="max-w-3xl mx-auto px-6 text-center reveal">
+    <h2 class="text-3xl font-extrabold text-primary mb-4">Core Expertise</h2>
+    <p class="text-slate-600 leading-relaxed">Mastery across every facet of residential and commercial plumbing.</p>
+  </div>
+
+  <div class="max-w-6xl mx-auto px-6 grid grid-cols-2 md:grid-cols-4 gap-4 mt-12 reveal">
+    <div class="bg-white p-5 rounded-xl text-center space-y-2 shadow-sm hover:-translate-y-1 hover:shadow-md transition-all">
+      <i class="fa-solid fa-screwdriver-wrench text-vblue text-xl"></i>
+      <p class="text-sm font-semibold text-primary">Sewer Repair</p>
+    </div>
+    <div class="bg-white p-5 rounded-xl text-center space-y-2 shadow-sm hover:-translate-y-1 hover:shadow-md transition-all">
+      <i class="fa-solid fa-broom text-vblue text-xl"></i>
+      <p class="text-sm font-semibold text-primary">Drain Cleaning</p>
+    </div>
+    <div class="bg-white p-5 rounded-xl text-center space-y-2 shadow-sm hover:-translate-y-1 hover:shadow-md transition-all">
+      <i class="fa-solid fa-faucet text-vblue text-xl"></i>
+      <p class="text-sm font-semibold text-primary">Fixture Install</p>
+    </div>
+    <div class="bg-white p-5 rounded-xl text-center space-y-2 shadow-sm hover:-translate-y-1 hover:shadow-md transition-all">
+      <i class="fa-solid fa-fire-burner text-vblue text-xl"></i>
+      <p class="text-sm font-semibold text-primary">Water Heaters</p>
+    </div>
+    <div class="bg-white p-5 rounded-xl text-center space-y-2 shadow-sm hover:-translate-y-1 hover:shadow-md transition-all">
+      <i class="fa-solid fa-wave-square text-vblue text-xl"></i>
+      <p class="text-sm font-semibold text-primary">Leak Detection</p>
+    </div>
+    <div class="bg-white p-5 rounded-xl text-center space-y-2 shadow-sm hover:-translate-y-1 hover:shadow-md transition-all">
+      <i class="fa-solid fa-fire text-vblue text-xl"></i>
+      <p class="text-sm font-semibold text-primary">Gas Line Service</p>
+    </div>
+    <div class="bg-white p-5 rounded-xl text-center space-y-2 shadow-sm hover:-translate-y-1 hover:shadow-md transition-all">
+      <i class="fa-solid fa-screwdriver text-vblue text-xl"></i>
+      <p class="text-sm font-semibold text-primary">Pipe Replacement</p>
+    </div>
+    <div class="bg-white p-5 rounded-xl text-center space-y-2 shadow-sm hover:-translate-y-1 hover:shadow-md transition-all">
+      <i class="fa-solid fa-triangle-exclamation text-vblue text-xl"></i>
+      <p class="text-sm font-semibold text-primary">Emergency Repairs</p>
+    </div>
+  </div>
+</section>
+
+<!-- HOW WE WORK -->
+<section class="py-16 bg-white overflow-hidden">
+  <div class="max-w-6xl mx-auto px-6">
+    <h2 class="text-3xl font-extrabold text-primary text-center mb-14 reveal">How We Work</h2>
+    <div class="relative reveal">
+      <div class="hidden md:block absolute top-5 left-0 w-full h-0.5 bg-slate-200 z-0"></div>
+      <div class="grid sm:grid-cols-2 md:grid-cols-6 gap-8 relative z-10">
+        <div class="text-center">
+          <div class="w-10 h-10 bg-primary text-white rounded-full flex items-center justify-center mx-auto mb-3 font-bold">1</div>
+          <h4 class="font-bold text-primary mb-1 text-sm">Inspect</h4>
+          <p class="text-xs text-slate-500">Thorough visual and mechanical assessment.</p>
+        </div>
+        <div class="text-center">
+          <div class="w-10 h-10 bg-primary text-white rounded-full flex items-center justify-center mx-auto mb-3 font-bold">2</div>
+          <h4 class="font-bold text-primary mb-1 text-sm">Diagnose</h4>
+          <p class="text-xs text-slate-500">Identify root causes with precision tools.</p>
+        </div>
+        <div class="text-center">
+          <div class="w-10 h-10 bg-primary text-white rounded-full flex items-center justify-center mx-auto mb-3 font-bold">3</div>
+          <h4 class="font-bold text-primary mb-1 text-sm">Recommend</h4>
+          <p class="text-xs text-slate-500">Present clear options and upfront pricing.</p>
+        </div>
+        <div class="text-center">
+          <div class="w-10 h-10 bg-primary text-white rounded-full flex items-center justify-center mx-auto mb-3 font-bold">4</div>
+          <h4 class="font-bold text-primary mb-1 text-sm">Repair</h4>
+          <p class="text-xs text-slate-500">Expert execution with quality materials.</p>
+        </div>
+        <div class="text-center">
+          <div class="w-10 h-10 bg-primary text-white rounded-full flex items-center justify-center mx-auto mb-3 font-bold">5</div>
+          <h4 class="font-bold text-primary mb-1 text-sm">Final Testing</h4>
+          <p class="text-xs text-slate-500">Verify performance and system integrity.</p>
+        </div>
+        <div class="text-center">
+          <div class="w-10 h-10 bg-vgreen text-white rounded-full flex items-center justify-center mx-auto mb-3 font-bold">6</div>
+          <h4 class="font-bold text-primary mb-1 text-sm">Satisfaction</h4>
+          <p class="text-xs text-slate-500">Walkthrough and sign-off.</p>
+        </div>
+      </div>
     </div>
   </div>
 </section>
@@ -215,19 +346,46 @@
       </div>
     </div>
     <div class="relative w-full aspect-square map-card rounded-3xl overflow-hidden border-4 border-white shadow-xl reveal">
-      <div class="road h1"></div>
-      <div class="road h2"></div>
-      <div class="road v1"></div>
-      <div class="road v2"></div>
-      <div class="map-dot" style="top:22%;left:35%;"></div>
-      <div class="map-dot" style="top:40%;left:62%;"></div>
+      <svg class="map-svg" viewBox="0 0 400 400" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">
+        <!-- Land mass -->
+        <path d="M0,40 C60,20 120,55 170,45 C230,33 270,70 320,60 C360,52 380,80 400,75 L400,400 L0,400 Z" fill="#7fa66a" opacity="0.55"/>
+        <path d="M0,70 C50,55 110,90 160,78 C220,64 260,100 310,90 C355,82 380,105 400,100 L400,400 L0,400 Z" fill="#8fb578" opacity="0.6"/>
+        <path d="M20,400 C40,300 60,220 110,170 C150,130 190,150 230,130 C280,105 300,140 340,160 C370,175 390,230 400,260 L400,400 Z" fill="#c9d8c0" opacity="0.5"/>
+        <!-- Long island barrier strip -->
+        <path d="M250,140 C300,150 340,180 390,210 L400,230 L400,260 C350,225 300,195 245,165 Z" fill="#a9bf94" opacity="0.7"/>
+
+        <!-- Roads (white grid lines, denser near center) -->
+        <g stroke="#ffffff" stroke-linecap="round" opacity="0.85">
+          <path d="M40,260 L130,150" stroke-width="2"/>
+          <path d="M70,300 L190,160" stroke-width="2.4"/>
+          <path d="M110,330 L240,180" stroke-width="3"/>
+          <path d="M150,350 L290,210" stroke-width="2"/>
+          <path d="M30,210 L300,150" stroke-width="1.6"/>
+          <path d="M60,260 L330,195" stroke-width="1.6"/>
+          <path d="M100,310 L360,235" stroke-width="1.6"/>
+          <path d="M140,345 L380,265" stroke-width="1.4"/>
+          <!-- cross streets -->
+          <path d="M90,170 L60,330" stroke-width="1.2"/>
+          <path d="M140,165 L100,345" stroke-width="1.2"/>
+          <path d="M190,160 L150,355" stroke-width="1.2"/>
+          <path d="M235,165 L195,355" stroke-width="1.2"/>
+          <path d="M280,175 L245,345" stroke-width="1.2"/>
+        </g>
+
+        <!-- main highway -->
+        <path d="M10,180 C100,140 220,150 400,90" stroke="#fff" stroke-width="3.5" fill="none" opacity="0.9"/>
+      </svg>
+
+      <div class="map-dot" style="top:38%;left:34%;"></div>
+      <div class="map-dot" style="top:48%;left:55%;"></div>
       <div class="map-dot" style="top:60%;left:30%;"></div>
-      <div class="map-dot" style="top:74%;left:68%;"></div>
+      <div class="map-dot" style="top:68%;left:62%;"></div>
+
       <div class="absolute inset-0 flex items-center justify-center">
         <div class="map-pin-wrap">
           <div class="map-pin-radar"></div>
           <div class="map-pin-radar delay"></div>
-          <i class="fa-solid fa-location-dot map-pin text-primary text-5xl"></i>
+          <i class="fa-solid fa-location-dot map-pin text-white text-5xl"></i>
         </div>
       </div>
       <div class="absolute bottom-4 left-4 right-4 bg-white/90 backdrop-blur-md p-3 rounded-xl">
@@ -238,14 +396,14 @@
 </section>
 
 <!-- FINAL CTA -->
-<section class="bg-primary text-white py-12">
+<section class="text-white py-12" style="background:linear-gradient(120deg, #0EA5E9 0%, #0D9488 100%);">
   <div class="max-w-6xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-8 text-center md:text-left">
     <div>
       <h2 class="text-2xl md:text-3xl font-bold mb-1">Ready to work with a local team you can trust?</h2>
-      <p class="text-slate-300">Get honest, reliable plumbing service — available 24/7 for emergencies.</p>
+      <p class="text-white/85">Get honest, reliable plumbing service — available 24/7 for emergencies.</p>
     </div>
     <div class="flex flex-wrap gap-3 justify-center">
-      <a href="tel:+15164029213" class="bg-vgreen text-white font-bold px-7 py-3.5 rounded-xl hover:shadow-lg transition-all flex items-center gap-2">
+      <a href="tel:+15164029213" class="bg-white text-primary font-bold px-7 py-3.5 rounded-xl hover:shadow-lg transition-all flex items-center gap-2">
         <i class="fa-solid fa-phone"></i> Call +1 516-402-9213
       </a>
       <a href="book.php" class="bg-vorange text-white font-bold px-7 py-3.5 rounded-xl hover:shadow-lg transition-all">Book Service</a>
