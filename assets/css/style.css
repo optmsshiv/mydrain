@@ -73,9 +73,7 @@ svg {
 
 /* HEADER */
 header {
-  position: sticky;
-  top: 0;
-  z-index: 100;
+  position: static;
   background: var(--primary);
   border-bottom: 1px solid rgba(255, 255, 255, 0.08);
 }
@@ -1490,9 +1488,7 @@ footer {
 }
 
 header {
-  position: sticky;
-  top: var(--topbar-h, 0px);
-  z-index: 100;
+  position: static;
 }
 
 @media (max-width:700px) {
