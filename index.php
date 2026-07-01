@@ -299,7 +299,7 @@
 </section>
 
 <!-- FINAL EMERGENCY CTA -->
-<section class="py-12 text-white" style="background:linear-gradient(120deg,#F97316 0%,#E11D48 100%);">
+<section class="py-12 text-white" style="background:linear-gradient(120deg,#0EA5E9 0%,#0D9488 100%);">
   <div class="max-w-6xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-8 text-center md:text-left">
     <div>
       <h2 class="text-2xl md:text-3xl font-bold mb-1">Have a sewer or drain emergency?</h2>
